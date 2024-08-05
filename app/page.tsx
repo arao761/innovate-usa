@@ -1,113 +1,199 @@
-import Image from "next/image";
+'use client'
+import React, { useState } from 'react';
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+const InnovateUSA: React.FC = () => {
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    return (
+        <div className="font-roboto text-gray-100" style={{ backgroundColor: '#000' }}>
+            {/* Header */}
+            <header className="bg-blue-900 text-white py-6 sticky top-0 z-50">
+                <div className="container mx-auto px-4 flex justify-between items-center">
+                    <h1 className="text-3xl font-bold">InnovateUSA</h1>
+                    <nav className="desktop-menu hidden md:block">
+                        <ul className="flex space-x-6">
+                            <li><a href="#about" className="hover:underline">About</a></li>
+                            <li><a href="#team" className="hover:underline">Team</a></li>
+                            <li><a href="#events" className="hover:underline">Events</a></li>
+                            <li><a href="#competitions" className="hover:underline">Competitions</a></li>
+                            <li><a href="#learn" className="hover:underline">Learn & Educate</a></li>
+                        </ul>
+                    </nav>
+                    <button 
+                        className="mobile-menu-button block md:hidden" 
+                        onClick={toggleMobileMenu} 
+                        aria-label="Toggle mobile menu"
+                    >
+                        <i className="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+                {isMobileMenuOpen && (
+                    <nav id="mobile-menu" className="bg-blue-800 py-4">
+                        <ul className="flex flex-col items-center space-y-4">
+                            <li><a href="#about" className="hover:underline">About</a></li>
+                            <li><a href="#team" className="hover:underline">Team</a></li>
+                            <li><a href="#events" className="hover:underline">Events</a></li>
+                            <li><a href="#competitions" className="hover:underline">Competitions</a></li>
+                            <li><a href="#learn" className="hover:underline">Learn & Educate</a></li>
+                        </ul>
+                    </nav>
+                )}
+            </header>
+
+
+            {/* About Section */}
+            <section id="about" className="py-16 bg-gray-900">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">About InnovateUSA</h2>
+                    <div className="text-center">
+                        <h3 className="text-2xl font-semibold mb-4 text-blue-400">Vision</h3>
+                        <p className="text-lg mb-8">
+                            Our mission is to foster innovation and entrepreneurship across the United States, empowering individuals to bring their ideas to life and make a positive impact on society.
+                        </p>
+                        <h3 className="text-2xl font-semibold mb-4 text-blue-400">Impact</h3>
+                        <p className="text-lg">
+                            Since our inception, we have supported over 10,000 innovators, hosted 500+ events, and facilitated the creation of 200+ startups. Our community continues to grow and thrive.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Team Section */}
+            <section id="team" className="py-16 bg-gray-800">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Our Team</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Team Member 1 */}
+                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
+                            <img src="https://placehold.co/150x150" alt="Portrait of John Doe, CEO & Founder" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <h3 className="text-xl font-semibold text-blue-400">John Doe</h3>
+                            <p className="text-gray-400">CEO & Founder</p>
+                            <p className="text-gray-400 mt-4">
+                                John is a visionary leader with over 20 years of experience in the tech industry. He founded InnovateUSA to help cultivate the next generation of innovators.
+                            </p>
+                        </div>
+                        {/* Team Member 2 */}
+                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
+                            <img src="https://placehold.co/150x150" alt="Portrait of Jane Smith, COO" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <h3 className="text-xl font-semibold text-blue-400">Jane Smith</h3>
+                            <p className="text-gray-400">COO</p>
+                            <p className="text-gray-400 mt-4">
+                                Jane oversees the day-to-day operations at InnovateUSA. With a background in business management, she ensures everything runs smoothly.
+                            </p>
+                        </div>
+                        {/* Team Member 3 */}
+                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
+                            <img src="https://placehold.co/150x150" alt="Portrait of Alice Johnson, CTO" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <h3 className="text-xl font-semibold text-blue-400">Alice Johnson</h3>
+                            <p className="text-gray-400">CTO</p>
+                            <p className="text-gray-400 mt-4">
+                                Alice is the tech genius behind our platform. She leads our tech team and ensures we stay ahead of the curve with the latest technological advancements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Events & Activities Section */}
+            <section id="events" className="py-16 bg-gray-900">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Events & Activities</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Event 1 */}
+                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover-transition">
+                            <h3 className="text-xl font-semibold mb-2 text-blue-400">Upcoming Event: Innovation Summit</h3>
+                            <p className="text-gray-400 mb-4">Date: March 15, 2024</p>
+                            <p className="text-gray-300">
+                                Join us for a day of inspiring talks, networking, and workshops focused on the latest trends in innovation and entrepreneurship. Keynote speakers include industry leaders and successful entrepreneurs.
+                            </p>
+                            <a href="#" className="inline-block mt-4 bg-blue-400 text-gray-900 px-4 py-2 rounded hover:bg-blue-500">Register Now</a>
+                        </div>
+                        {/* Event 2 */}
+                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover-transition">
+                            <h3 className="text-xl font-semibold mb-2 text-blue-400">Previous Activity: Startup Bootcamp</h3>
+                            <p className="text-gray-400 mb-4">Date: January 10, 2024</p>
+                            <p className="text-gray-300">
+                                Our intensive bootcamp helped aspiring entrepreneurs develop their business ideas and pitch them to investors. Participants received hands-on mentorship and valuable feedback.
+                            </p>
+                            <a href="#" className="inline-block mt-4 bg-blue-400 text-gray-900 px-4 py-2 rounded hover:bg-blue-500">View Highlights</a>
+                        </div>
+                        {/* Event 3 */}
+                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover-transition">
+                            <h3 className="text-xl font-semibold mb-2 text-blue-400">Upcoming Event: Hackathon</h3>
+                            <p className="text-gray-400 mb-4">Date: April 25, 2024</p>
+                            <p className="text-gray-300">
+                                A 48-hour hackathon where participants will build innovative solutions to real-world problems and compete for prizes. This event is open to developers, designers, and entrepreneurs.
+                            </p>
+                            <a href="#" className="inline-block mt-4 bg-blue-400 text-gray-900 px-4 py-2 rounded hover:bg-blue-500">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Competitions Section */}
+            <section id="competitions" className="py-16 bg-gray-800">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Competitions</h2>
+                    <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
+                        <h3 className="text-2xl font-semibold mb-4 text-blue-400">InnovateUSA Competition 2024</h3>
+                        <p className="text-gray-400 mb-4">Date: June 10-12, 2024</p>
+                        <p className="text-gray-300 mb-4">
+                            Join our annual competition where innovators from across the country present their groundbreaking ideas and compete for funding and mentorship opportunities. The competition will feature categories such as Technology, Healthcare, Sustainability, and Education.
+                        </p>
+                        <ul className="list-disc list-inside text-left mx-auto mb-4 text-gray-300">
+                            <li className="text-lg hover-transition"><a href="#" className="text-blue-400 hover:underline">Technology: Innovations in software, hardware, and IT.</a></li>
+                            <li className="text-lg hover-transition"><a href="#" className="text-blue-400 hover:underline">Healthcare: Breakthroughs in medical technology and healthcare services.</a></li>
+                            <li className="text-lg hover-transition"><a href="#" className="text-blue-400 hover:underline">Sustainability: Solutions for environmental and social sustainability.</a></li>
+                            <li className="text-lg hover-transition"><a href="#" className="text-blue-400 hover:underline">Education: Innovations in educational tools and methodologies.</a></li>
+                        </ul>
+                        <p className="text-gray-300">
+                            Winners will receive cash prizes, mentorship from industry leaders, and opportunities to showcase their work to potential investors.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Learn & Educate Section */}
+            <section id="learn" className="py-16 bg-gray-900">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Learn & Educate</h2>
+                    <div className="text-center max-w-3xl mx-auto">
+                        <h3 className="text-2xl font-semibold mb-4 text-blue-400">The American Enterprise System</h3>
+                        <p className="text-lg mb-4">The American Enterprise System is built on five key pillars:</p>
+                        <ul className="list-disc list-inside text-left mx-auto mb-8 text-gray-300">
+                            <li className="text-lg flex items-center mb-4"><i className="fas fa-home mr-2 text-blue-400"></i>Private Property: The right to own and control private property.</li>
+                            <li className="text-lg flex items-center mb-4"><i className="fas fa-hand-holding-usd mr-2 text-blue-400"></i>Freedom of Choice: The freedom to choose how to produce, sell, and use your own resources.</li>
+                            <li className="text-lg flex items-center mb-4"><i className="fas fa-piggy-bank mr-2 text-blue-400"></i>Profit Incentive: The motivation to earn profits which drives innovation and efficiency.</li>
+                            <li className="text-lg flex items-center mb-4"><i className="fas fa-trophy mr-2 text-blue-400"></i>Competition: Healthy competition that encourages businesses to improve and innovate.</li>
+                            <li className="text-lg flex items-center mb-4"><i className="fas fa-balance-scale mr-2 text-blue-400"></i>Limited Government: A government that provides a stable environment for the economy to thrive but does not overly interfere.</li>
+                        </ul>
+                        <p className="text-lg">
+                            Understanding these pillars is crucial for anyone looking to innovate and succeed in the American market. We offer a range of resources and educational programs to help you navigate and leverage these principles effectively.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Footer */}
+            <footer className="bg-blue-900 text-white py-8">
+                <div className="container mx-auto px-4 text-center">
+                    <div className="flex justify-center mb-4">
+                        <a href="#" target="_blank" className="mx-2 text-gray-400 hover:text-gray-300"><i className="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" target="_blank" className="mx-2 text-gray-400 hover:text-gray-300"><i className="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" target="_blank" className="mx-2 text-gray-400 hover:text-gray-300"><i className="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" target="_blank" className="mx-2 text-gray-400 hover:text-gray-300"><i className="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                    <p>&copy; 2024 InnovateUSA. All rights reserved.</p>
+                    <p className="mt-1">Email: info@innovateusa.org | Phone: (123) 456-7890</p>
+                    <a href="#contact" className="inline-block mt-4 bg-blue-400 text-gray-900 px-4 py-2 rounded hover:bg-blue-500">Contact Us</a>
+                </div>
+            </footer>
         </div>
-      </div>
+    );
+};
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
-}
+export default InnovateUSA;
