@@ -44,7 +44,6 @@ const InnovateUSA: React.FC = () => {
                 )}
             </header>
 
-
             {/* About Section */}
             <section id="about" className="py-16 bg-gray-900">
                 <div className="container mx-auto px-4">
@@ -69,15 +68,16 @@ const InnovateUSA: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Team Member 1 */}
                         <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of John Doe, CEO & Founder" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <img src="https://placehold.co/150x150" alt="Portrait of Sahasra Jonnalagadda" className="w-24 h-24 mx-auto rounded-full mb-4" />
                             <h3 className="text-xl font-semibold text-blue-400">Sahasra Jonnalagadda</h3>
                             <p className="text-gray-400"> Executive Director</p>
-                            <p className="text-gray-400 mt-4"></p>
-                            Oversees the overall vision, strategy, and execution of InnovateUSA. Responsible for guiding the projects direction, ensuring alignment with goals, and representing the campaign externally. 
+                            <p className="text-gray-400 mt-4">
+                                Oversees the overall vision, strategy, and execution of InnovateUSA. Responsible for guiding the projects direction, ensuring alignment with goals, and representing the campaign externally.
+                            </p>
                         </div>
                         {/* Team Member 2 */}
                         <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of Jane Smith, COO" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <img src="https://placehold.co/150x150" alt="Portrait of Roshini Mantena" className="w-24 h-24 mx-auto rounded-full mb-4" />
                             <h3 className="text-xl font-semibold text-blue-400">Roshini Mantena</h3>
                             <p className="text-gray-400">Program Manager</p>
                             <p className="text-gray-400 mt-4">
@@ -86,11 +86,56 @@ const InnovateUSA: React.FC = () => {
                         </div>
                         {/* Team Member 3 */}
                         <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of Alice Johnson, CTO" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <img src="https://placehold.co/150x150" alt="Portrait of Rashmi Mantena" className="w-24 h-24 mx-auto rounded-full mb-4" />
                             <h3 className="text-xl font-semibold text-blue-400">Rashmi Mantena</h3>
                             <p className="text-gray-400">Partnership Director</p>
                             <p className="text-gray-400 mt-4">
                             Focuses on building strategic partnerships with businesses, educational institutions, and community organizations to support the mission of InnovateUSA and enhance its impact.
+                            </p>
+                        </div>
+                        {/* Team Member 4 */}
+                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
+                            <img src="https://placehold.co/150x150" alt="Portrait of Ruhi Sharma" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <h3 className="text-xl font-semibold text-blue-400">Ruhi Sharma</h3>
+                            <p className="text-gray-400">Treasurer</p>
+                            <p className="text-gray-400 mt-4">
+                                Manages the organization finances, oversees budgeting, and ensures fiscal responsibility across all projects and initiatives.
+                            </p>
+                        </div>
+                        {/* Team Member 5 */}
+                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
+                            <img src="https://placehold.co/150x150" alt="Portrait of Ankit Rao" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <h3 className="text-xl font-semibold text-blue-400">Ankit Rao</h3>
+                            <p className="text-gray-400">Webmaster</p>
+                            <p className="text-gray-400 mt-4">
+                                Oversees the design, development, and maintenance of the InnovateUSA website, ensuring a seamless user experience and up-to-date content.
+                            </p>
+                        </div>
+                        {/* Team Member 6 */}
+                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
+                            <img src="https://placehold.co/150x150" alt="Portrait of Cara King" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <h3 className="text-xl font-semibold text-blue-400">Cara King</h3>
+                            <p className="text-gray-400">Director of Public Affairs</p>
+                            <p className="text-gray-400 mt-4">
+                                Leads public relations efforts, manages media outreach, and develops communication strategies to enhance InnovateUSA&apos; public image.
+                            </p>
+                        </div>
+                        {/* Team Member 7 */}
+                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
+                            <img src="https://placehold.co/150x150" alt="Portrait of Deryck Toney" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <h3 className="text-xl font-semibold text-blue-400">Deryck Toney</h3>
+                            <p className="text-gray-400">Secretary</p>
+                            <p className="text-gray-400 mt-4">
+                                Handles administrative tasks, keeps minutes of meetings, and ensures effective communication within the team and with external stakeholders.
+                            </p>
+                        </div>
+                                                {/* Team Member 8 */}
+                                                <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
+                            <img src="https://placehold.co/150x150" alt="Portrait of Katie Helge" className="w-24 h-24 mx-auto rounded-full mb-4" />
+                            <h3 className="text-xl font-semibold text-blue-400">Katie Helge</h3>
+                            <p className="text-gray-400">Director of Media</p>
+                            <p className="text-gray-400 mt-4">
+                                Oversees media production and strategy, manages content creation for various platforms, and ensures consistent messaging across all media channels.
                             </p>
                         </div>
                     </div>
