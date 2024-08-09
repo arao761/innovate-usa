@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import { motion } from 'framer-motion'; // For animations
+import { motion } from 'framer-motion';
 
 const InnovateUSA: React.FC = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -45,6 +45,38 @@ const InnovateUSA: React.FC = () => {
                 )}
             </header>
 
+            {/* Hero Section */}
+            <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: 'url(https://placehold.co/1920x1080)' }}>
+                <div className="absolute inset-0 bg-black opacity-50"></div>
+                <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+                    <motion.h1
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        className="text-6xl font-bold mb-4"
+                    >
+                        InnovateUSA
+                    </motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.3 }}
+                        className="text-2xl mb-6"
+                    >
+                        Empowering Innovation and Business Growth
+                    </motion.p>
+                    <motion.a
+                        href="#about"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.6, delay: 0.6 }}
+                        className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-3 rounded-lg text-xl font-semibold"
+                    >
+                        Learn More
+                    </motion.a>
+                </div>
+            </section>
+
             {/* About Section */}
             <section id="about" className="py-20 bg-gray-900">
                 <div className="container mx-auto px-6">
@@ -76,7 +108,7 @@ const InnovateUSA: React.FC = () => {
                     >
                         <h2 className="text-5xl font-bold text-blue-400 mb-8">Our Team</h2>
                     </motion.div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {/* Team Member Component */}
                         {[
                             { name: 'Sahasra Jonnalagadda', role: 'Executive Director', imgSrc: 'https://placehold.co/150x150', description: 'Oversees the overall vision, strategy, and execution of InnovateUSA.' },
@@ -90,13 +122,13 @@ const InnovateUSA: React.FC = () => {
                         ].map((member, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-gray-700 p-8 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: index * 0.2, duration: 0.8 }}
+                                className="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: index * 0.1, duration: 0.6 }}
                             >
                                 <img src={member.imgSrc} alt={`Portrait of ${member.name}`} className="w-32 h-32 mx-auto rounded-full mb-4" />
-                                <h3 className="text-xl font-semibold text-blue-400 mb-2">{member.name}</h3>
+                                <h3 className="text-xl font-semibold mb-2 text-blue-400">{member.name}</h3>
                                 <p className="text-gray-400 mb-4">{member.role}</p>
                                 <p className="text-gray-300">{member.description}</p>
                             </motion.div>
@@ -114,18 +146,21 @@ const InnovateUSA: React.FC = () => {
                         transition={{ duration: 0.8 }}
                         className="text-center mb-12"
                     >
-                        <h2 className="text-5xl font-bold text-blue-400 mb-8">Events & Activities</h2>
+                        <h2 className="text-5xl font-bold text-blue-400 mb-8">Upcoming Events</h2>
+                        <p className="text-lg mb-6">
+                            Join us for our upcoming events to stay connected, learn, and grow. Each event is an opportunity to engage with industry experts and fellow innovators.
+                        </p>
                     </motion.div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                         {/* Event Component */}
                         {[
-                            { title: 'Innovation Summit', date: 'March 15, 2024', description: 'A day of inspiring talks, networking, and workshops.', linkText: 'Register Now' },
-                            { title: 'Startup Bootcamp', date: 'January 10, 2024', description: 'An intensive bootcamp for aspiring entrepreneurs.', linkText: 'View Highlights' },
-                            { title: 'Hackathon', date: 'April 25, 2024', description: 'A 48-hour hackathon to build innovative solutions.', linkText: 'Register Now' },
+                            { title: 'Innovation Summit 2024', date: 'August 15, 2024', description: 'A conference bringing together thought leaders and innovators to discuss the future of technology.', linkText: 'Learn More' },
+                            { title: 'Startup Networking Night', date: 'September 10, 2024', description: 'An evening of networking with entrepreneurs and investors.', linkText: 'Register Now' },
+                            { title: 'Tech Trends Workshop', date: 'October 5, 2024', description: 'A workshop focusing on the latest trends in technology and their impact on businesses.', linkText: 'View Details' },
                         ].map((event, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-gray-700 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                                className="bg-gray-700 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.2, duration: 0.8 }}
@@ -163,7 +198,7 @@ const InnovateUSA: React.FC = () => {
                         ].map((competition, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-gray-700 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                                className="bg-gray-700 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.2, duration: 0.8 }}
@@ -200,7 +235,7 @@ const InnovateUSA: React.FC = () => {
                         ].map((resource, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-gray-700 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                                className="bg-gray-700 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.2, duration: 0.8 }}
