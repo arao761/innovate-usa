@@ -12,7 +12,7 @@ const InnovateUSA: React.FC = () => {
     return (
         <div className="font-roboto text-gray-100 bg-black">
             {/* Header */}
-            <header className="bg-blue-900 text-white py-6 sticky top-0 z-50">
+            <header className="bg-blue-900 text-white py-6 sticky top-0 z-50 shadow-md">
                 <div className="container mx-auto px-6 flex justify-between items-center">
                     <h1 className="text-4xl font-bold">InnovateUSA</h1>
                     <nav className="hidden md:flex">
@@ -250,13 +250,27 @@ const InnovateUSA: React.FC = () => {
             </section>
 
             {/* Footer */}
-            <footer className="bg-blue-900 text-white py-6">
-                <div className="container mx-auto px-6 text-center">
-                    <p className="mb-4">© 2024 InnovateUSA. All rights reserved.</p>
-                    <div className="flex justify-center space-x-6">
-                        <a href="#" className="hover:text-blue-400">Privacy Policy</a>
-                        <a href="#" className="hover:text-blue-400">Terms of Service</a>
-                        <a href="#" className="hover:text-blue-400">Contact Us</a>
+            <footer className="bg-blue-900 text-white py-8">
+                <div className="container mx-auto px-6 flex flex-col items-center">
+                    <div className="mb-4">
+                        <h2 className="text-3xl font-bold mb-2">Connect with Us</h2>
+                        <p className="text-lg mb-6">Follow us on social media to stay updated with the latest news and updates.</p>
+                        <div className="flex space-x-6 mb-4">
+                            <a href="https://tiktok.com/@innovateusa" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                                <i className="fab fa-tiktok fa-2x"></i>
+                            </a>
+                            <a href="https://instagram.com/innovateusa" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
+                                <i className="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="text-center">
+                        <p className="mb-2">© 2024 InnovateUSA. All rights reserved.</p>
+                        <div className="flex justify-center space-x-6">
+                            <a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
+                            <a href="#" className="hover:text-blue-400 transition-colors">Terms of Service</a>
+                            <a href="#" className="hover:text-blue-400 transition-colors">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </footer>
