@@ -73,7 +73,7 @@ const InnovateUSA: React.FC = () => {
                             <h3 className="text-xl font-semibold text-blue-400">Sahasra Jonnalagadda</h3>
                             <p className="text-gray-400"> Executive Director</p>
                             <p className="text-gray-400 mt-4"></p>
-                            Oversees the overall vision, strategy, and execution of InnovateUSA. Responsible for guiding the project's direction, ensuring alignment with goals, and representing the campaign externally. 
+                            Oversees the overall vision, strategy, and execution of InnovateUSA. Responsible for guiding the projects direction, ensuring alignment with goals, and representing the campaign externally. 
                         </div>
                         {/* Team Member 2 */}
                         <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
