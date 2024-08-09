@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import { motion } from 'framer-motion'; // For animations
 
 const InnovateUSA: React.FC = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,231 +10,219 @@ const InnovateUSA: React.FC = () => {
     };
 
     return (
-        <div className="font-roboto text-gray-100" style={{ backgroundColor: '#000' }}>
+        <div className="font-roboto text-gray-100 bg-black">
             {/* Header */}
             <header className="bg-blue-900 text-white py-6 sticky top-0 z-50">
-                <div className="container mx-auto px-4 flex justify-between items-center">
-                    <h1 className="text-3xl font-bold">InnovateUSA</h1>
-                    <nav className="desktop-menu hidden md:block">
-                        <ul className="flex space-x-6">
-                            <li><a href="#about" className="hover:underline">About</a></li>
-                            <li><a href="#team" className="hover:underline">Team</a></li>
-                            <li><a href="#events" className="hover:underline">Events</a></li>
-                            <li><a href="#competitions" className="hover:underline">Competitions</a></li>
-                            <li><a href="#learn" className="hover:underline">Learn & Educate</a></li>
+                <div className="container mx-auto px-6 flex justify-between items-center">
+                    <h1 className="text-4xl font-bold">InnovateUSA</h1>
+                    <nav className="hidden md:flex">
+                        <ul className="flex space-x-8">
+                            <li><a href="#about" className="hover:text-blue-400 transition-colors">About</a></li>
+                            <li><a href="#team" className="hover:text-blue-400 transition-colors">Team</a></li>
+                            <li><a href="#events" className="hover:text-blue-400 transition-colors">Events</a></li>
+                            <li><a href="#competitions" className="hover:text-blue-400 transition-colors">Competitions</a></li>
+                            <li><a href="#learn" className="hover:text-blue-400 transition-colors">Learn & Educate</a></li>
                         </ul>
                     </nav>
                     <button 
-                        className="mobile-menu-button block md:hidden" 
-                        onClick={toggleMobileMenu} 
+                        className="md:hidden text-2xl"
+                        onClick={toggleMobileMenu}
                         aria-label="Toggle mobile menu"
                     >
-                        <i className="fas fa-bars" aria-hidden="true"></i>
+                        <i className="fas fa-bars"></i>
                     </button>
                 </div>
                 {isMobileMenuOpen && (
-                    <nav id="mobile-menu" className="bg-blue-800 py-4">
+                    <nav className="bg-blue-800 py-4 md:hidden">
                         <ul className="flex flex-col items-center space-y-4">
-                            <li><a href="#about" className="hover:underline">About</a></li>
-                            <li><a href="#team" className="hover:underline">Team</a></li>
-                            <li><a href="#events" className="hover:underline">Events</a></li>
-                            <li><a href="#competitions" className="hover:underline">Competitions</a></li>
-                            <li><a href="#learn" className="hover:underline">Learn & Educate</a></li>
+                            <li><a href="#about" className="hover:text-blue-400 transition-colors">About</a></li>
+                            <li><a href="#team" className="hover:text-blue-400 transition-colors">Team</a></li>
+                            <li><a href="#events" className="hover:text-blue-400 transition-colors">Events</a></li>
+                            <li><a href="#competitions" className="hover:text-blue-400 transition-colors">Competitions</a></li>
+                            <li><a href="#learn" className="hover:text-blue-400 transition-colors">Learn & Educate</a></li>
                         </ul>
                     </nav>
                 )}
             </header>
 
             {/* About Section */}
-            <section id="about" className="py-16 bg-gray-900">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">About InnovateUSA</h2>
-                    <div className="text-center">
-                        <h3 className="text-2xl font-semibold mb-4 text-blue-400">Vision</h3>
-                        <p className="text-lg mb-8">
-                        Our mission is to educate and empower the community with comprehensive knowledge of the American Enterprise System and business concepts. We seek to inform, inspire, and implement these ideas, fostering a deep understanding that lays the groundwork for future success.
+            <section id="about" className="py-20 bg-gray-900">
+                <div className="container mx-auto px-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center mb-12"
+                    >
+                        <h2 className="text-5xl font-bold text-blue-400 mb-4">About InnovateUSA</h2>
+                        <p className="text-lg mb-6">
+                            Our mission is to educate and empower the community with comprehensive knowledge of the American Enterprise System and business concepts. We seek to inform, inspire, and implement these ideas, fostering a deep understanding that lays the groundwork for future success.
                         </p>
-                        <h3 className="text-2xl font-semibold mb-4 text-blue-400">Impact</h3>
                         <p className="text-lg">
                             Since our inception, we have supported over 10,000 innovators, hosted 500+ events, and facilitated the creation of 200+ startups. Our community continues to grow and thrive.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* Team Section */}
-            <section id="team" className="py-16 bg-gray-800">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Our Team</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* Team Member 1 */}
-                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of Sahasra Jonnalagadda" className="w-24 h-24 mx-auto rounded-full mb-4" />
-                            <h3 className="text-xl font-semibold text-blue-400">Sahasra Jonnalagadda</h3>
-                            <p className="text-gray-400"> Executive Director</p>
-                            <p className="text-gray-400 mt-4">
-                                Oversees the overall vision, strategy, and execution of InnovateUSA. Responsible for guiding the projects direction, ensuring alignment with goals, and representing the campaign externally.
-                            </p>
-                        </div>
-                        {/* Team Member 2 */}
-                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of Roshini Mantena" className="w-24 h-24 mx-auto rounded-full mb-4" />
-                            <h3 className="text-xl font-semibold text-blue-400">Roshini Mantena</h3>
-                            <p className="text-gray-400">Program Manager</p>
-                            <p className="text-gray-400 mt-4">
-                            Manages day-to-day operations, coordinates team efforts, and ensures the successful implementation of all project activities and initiatives.
-                            </p>
-                        </div>
-                        {/* Team Member 3 */}
-                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of Rashmi Mantena" className="w-24 h-24 mx-auto rounded-full mb-4" />
-                            <h3 className="text-xl font-semibold text-blue-400">Rashmi Mantena</h3>
-                            <p className="text-gray-400">Partnership Director</p>
-                            <p className="text-gray-400 mt-4">
-                            Focuses on building strategic partnerships with businesses, educational institutions, and community organizations to support the mission of InnovateUSA and enhance its impact.
-                            </p>
-                        </div>
-                        {/* Team Member 4 */}
-                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of Ruhi Sharma" className="w-24 h-24 mx-auto rounded-full mb-4" />
-                            <h3 className="text-xl font-semibold text-blue-400">Ruhi Sharma</h3>
-                            <p className="text-gray-400">Treasurer</p>
-                            <p className="text-gray-400 mt-4">
-                                Manages the organization finances, oversees budgeting, and ensures fiscal responsibility across all projects and initiatives.
-                            </p>
-                        </div>
-                        {/* Team Member 5 */}
-                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of Ankit Rao" className="w-24 h-24 mx-auto rounded-full mb-4" />
-                            <h3 className="text-xl font-semibold text-blue-400">Ankit Rao</h3>
-                            <p className="text-gray-400">Webmaster</p>
-                            <p className="text-gray-400 mt-4">
-                                Oversees the design, development, and maintenance of the InnovateUSA website, ensuring a seamless user experience and up-to-date content.
-                            </p>
-                        </div>
-                        {/* Team Member 6 */}
-                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of Cara King" className="w-24 h-24 mx-auto rounded-full mb-4" />
-                            <h3 className="text-xl font-semibold text-blue-400">Cara King</h3>
-                            <p className="text-gray-400">Director of Public Affairs</p>
-                            <p className="text-gray-400 mt-4">
-                                Leads public relations efforts, manages media outreach, and develops communication strategies to enhance InnovateUSA&apos; public image.
-                            </p>
-                        </div>
-                        {/* Team Member 7 */}
-                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of Deryck Toney" className="w-24 h-24 mx-auto rounded-full mb-4" />
-                            <h3 className="text-xl font-semibold text-blue-400">Deryck Toney</h3>
-                            <p className="text-gray-400">Secretary</p>
-                            <p className="text-gray-400 mt-4">
-                                Handles administrative tasks, keeps minutes of meetings, and ensures effective communication within the team and with external stakeholders.
-                            </p>
-                        </div>
-                                                {/* Team Member 8 */}
-                                                <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center hover-transition">
-                            <img src="https://placehold.co/150x150" alt="Portrait of Katie Helge" className="w-24 h-24 mx-auto rounded-full mb-4" />
-                            <h3 className="text-xl font-semibold text-blue-400">Katie Helge</h3>
-                            <p className="text-gray-400">Director of Media</p>
-                            <p className="text-gray-400 mt-4">
-                                Oversees media production and strategy, manages content creation for various platforms, and ensures consistent messaging across all media channels.
-                            </p>
-                        </div>
+            <section id="team" className="py-20 bg-gray-800">
+                <div className="container mx-auto px-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center mb-12"
+                    >
+                        <h2 className="text-5xl font-bold text-blue-400 mb-8">Our Team</h2>
+                    </motion.div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                        {/* Team Member Component */}
+                        {[
+                            { name: 'Sahasra Jonnalagadda', role: 'Executive Director', imgSrc: 'https://placehold.co/150x150', description: 'Oversees the overall vision, strategy, and execution of InnovateUSA.' },
+                            { name: 'Roshini Mantena', role: 'Program Manager', imgSrc: 'https://placehold.co/150x150', description: 'Manages day-to-day operations, coordinates team efforts.' },
+                            { name: 'Rashmi Mantena', role: 'Partnership Director', imgSrc: 'https://placehold.co/150x150', description: 'Focuses on building strategic partnerships.' },
+                            { name: 'Ruhi Sharma', role: 'Treasurer', imgSrc: 'https://placehold.co/150x150', description: 'Manages the organization finances and budgeting.' },
+                            { name: 'Ankit Rao', role: 'Webmaster', imgSrc: 'https://placehold.co/150x150', description: 'Oversees the design, development, and maintenance of the website.' },
+                            { name: 'Cara King', role: 'Director of Public Affairs', imgSrc: 'https://placehold.co/150x150', description: 'Leads public relations efforts and manages media outreach.' },
+                            { name: 'Deryck Toney', role: 'Secretary', imgSrc: 'https://placehold.co/150x150', description: 'Handles administrative tasks and keeps minutes of meetings.' },
+                            { name: 'Katie Helge', role: 'Director of Media', imgSrc: 'https://placehold.co/150x150', description: 'Oversees media production and strategy.' },
+                        ].map((member, index) => (
+                            <motion.div
+                                key={index}
+                                className="bg-gray-700 p-8 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.2, duration: 0.8 }}
+                            >
+                                <img src={member.imgSrc} alt={`Portrait of ${member.name}`} className="w-32 h-32 mx-auto rounded-full mb-4" />
+                                <h3 className="text-xl font-semibold text-blue-400 mb-2">{member.name}</h3>
+                                <p className="text-gray-400 mb-4">{member.role}</p>
+                                <p className="text-gray-300">{member.description}</p>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>
 
             {/* Events & Activities Section */}
-            <section id="events" className="py-16 bg-gray-900">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Events & Activities</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* Event 1 */}
-                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover-transition">
-                            <h3 className="text-xl font-semibold mb-2 text-blue-400">Upcoming Event: Innovation Summit</h3>
-                            <p className="text-gray-400 mb-4">Date: March 15, 2024</p>
-                            <p className="text-gray-300">
-                                Join us for a day of inspiring talks, networking, and workshops focused on the latest trends in innovation and entrepreneurship. Keynote speakers include industry leaders and successful entrepreneurs.
-                            </p>
-                            <a href="#" className="inline-block mt-4 bg-blue-400 text-gray-900 px-4 py-2 rounded hover:bg-blue-500">Register Now</a>
-                        </div>
-                        {/* Event 2 */}
-                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover-transition">
-                            <h3 className="text-xl font-semibold mb-2 text-blue-400">Previous Activity: Startup Bootcamp</h3>
-                            <p className="text-gray-400 mb-4">Date: January 10, 2024</p>
-                            <p className="text-gray-300">
-                                Our intensive bootcamp helped aspiring entrepreneurs develop their business ideas and pitch them to investors. Participants received hands-on mentorship and valuable feedback.
-                            </p>
-                            <a href="#" className="inline-block mt-4 bg-blue-400 text-gray-900 px-4 py-2 rounded hover:bg-blue-500">View Highlights</a>
-                        </div>
-                        {/* Event 3 */}
-                        <div className="bg-gray-700 p-6 rounded-lg shadow-lg hover-transition">
-                            <h3 className="text-xl font-semibold mb-2 text-blue-400">Upcoming Event: Hackathon</h3>
-                            <p className="text-gray-400 mb-4">Date: April 25, 2024</p>
-                            <p className="text-gray-300">
-                                A 48-hour hackathon where participants will build innovative solutions to real-world problems and compete for prizes. This event is open to developers, designers, and entrepreneurs.
-                            </p>
-                            <a href="#" className="inline-block mt-4 bg-blue-400 text-gray-900 px-4 py-2 rounded hover:bg-blue-500">Register Now</a>
-                        </div>
+            <section id="events" className="py-20 bg-gray-900">
+                <div className="container mx-auto px-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center mb-12"
+                    >
+                        <h2 className="text-5xl font-bold text-blue-400 mb-8">Events & Activities</h2>
+                    </motion.div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                        {/* Event Component */}
+                        {[
+                            { title: 'Innovation Summit', date: 'March 15, 2024', description: 'A day of inspiring talks, networking, and workshops.', linkText: 'Register Now' },
+                            { title: 'Startup Bootcamp', date: 'January 10, 2024', description: 'An intensive bootcamp for aspiring entrepreneurs.', linkText: 'View Highlights' },
+                            { title: 'Hackathon', date: 'April 25, 2024', description: 'A 48-hour hackathon to build innovative solutions.', linkText: 'Register Now' },
+                        ].map((event, index) => (
+                            <motion.div
+                                key={index}
+                                className="bg-gray-700 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.2, duration: 0.8 }}
+                            >
+                                <h3 className="text-xl font-semibold mb-2 text-blue-400">{event.title}</h3>
+                                <p className="text-gray-400 mb-2">{event.date}</p>
+                                <p className="text-gray-300 mb-4">{event.description}</p>
+                                <a href="#" className="text-blue-400 hover:underline">{event.linkText}</a>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>
 
             {/* Competitions Section */}
-            <section id="competitions" className="py-16 bg-gray-800">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Competitions</h2>
-                    <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-                        <h3 className="text-2xl font-semibold mb-4 text-blue-400">InnovateUSA Competition 2024</h3>
-                        <p className="text-gray-400 mb-4">Date: June 10-12, 2024</p>
-                        <p className="text-gray-300 mb-4">
-                            Join our annual competition where innovators from across the country present their groundbreaking ideas and compete for funding and mentorship opportunities. The competition will feature categories such as Technology, Healthcare, Sustainability, and Education.
+            <section id="competitions" className="py-20 bg-gray-800">
+                <div className="container mx-auto px-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center mb-12"
+                    >
+                        <h2 className="text-5xl font-bold text-blue-400 mb-8">Competitions</h2>
+                        <p className="text-lg mb-6">
+                            Participate in our exciting competitions to showcase your skills and creativity. Each competition is designed to challenge and inspire you.
                         </p>
-                        <ul className="list-disc list-inside text-left mx-auto mb-4 text-gray-300">
-                            <li className="text-lg hover-transition"><a href="#" className="text-blue-400 hover:underline">Technology: Innovations in software, hardware, and IT.</a></li>
-                            <li className="text-lg hover-transition"><a href="#" className="text-blue-400 hover:underline">Healthcare: Breakthroughs in medical technology and healthcare services.</a></li>
-                            <li className="text-lg hover-transition"><a href="#" className="text-blue-400 hover:underline">Sustainability: Solutions for environmental and social sustainability.</a></li>
-                            <li className="text-lg hover-transition"><a href="#" className="text-blue-400 hover:underline">Education: Innovations in educational tools and methodologies.</a></li>
-                        </ul>
-                        <p className="text-gray-300">
-                            Winners will receive cash prizes, mentorship from industry leaders, and opportunities to showcase their work to potential investors.
-                        </p>
+                    </motion.div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                        {/* Competition Component */}
+                        {[
+                            { title: 'Tech Innovators Challenge', description: 'Solve complex tech problems and win exciting prizes.', linkText: 'Learn More' },
+                            { title: 'Business Pitch Competition', description: 'Pitch your startup idea to a panel of experts.', linkText: 'Register Now' },
+                            { title: 'Creative Solutions Contest', description: 'Submit your creative solutions to real-world problems.', linkText: 'View Details' },
+                        ].map((competition, index) => (
+                            <motion.div
+                                key={index}
+                                className="bg-gray-700 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.2, duration: 0.8 }}
+                            >
+                                <h3 className="text-xl font-semibold mb-2 text-blue-400">{competition.title}</h3>
+                                <p className="text-gray-300 mb-4">{competition.description}</p>
+                                <a href="#" className="text-blue-400 hover:underline">{competition.linkText}</a>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>
 
             {/* Learn & Educate Section */}
-            <section id="learn" className="py-16 bg-gray-900">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Learn & Educate</h2>
-                    <div className="text-center max-w-3xl mx-auto">
-                        <h3 className="text-2xl font-semibold mb-4 text-blue-400">The American Enterprise System</h3>
-                        <p className="text-lg mb-4">The American Enterprise System is built on five key pillars:</p>
-                        <ul className="list-disc list-inside text-left mx-auto mb-8 text-gray-300">
-                            <li className="text-lg flex items-center mb-4"><i className="fas fa-home mr-2 text-blue-400"></i>Private Property: The right to own and control private property.</li>
-                            <li className="text-lg flex items-center mb-4"><i className="fas fa-hand-holding-usd mr-2 text-blue-400"></i>Freedom of Choice: The freedom to choose how to produce, sell, and use your own resources.</li>
-                            <li className="text-lg flex items-center mb-4"><i className="fas fa-piggy-bank mr-2 text-blue-400"></i>Profit Incentive: The motivation to earn profits which drives innovation and efficiency.</li>
-                            <li className="text-lg flex items-center mb-4"><i className="fas fa-trophy mr-2 text-blue-400"></i>Competition: Healthy competition that encourages businesses to improve and innovate.</li>
-                            <li className="text-lg flex items-center mb-4"><i className="fas fa-balance-scale mr-2 text-blue-400"></i>Limited Government: A government that provides a stable environment for the economy to thrive but does not overly interfere.</li>
-                        </ul>
-                        <p className="text-lg">
-                            Understanding these pillars is crucial for anyone looking to innovate and succeed in the American market. We offer a range of resources and educational programs to help you navigate and leverage these principles effectively.
+            <section id="learn" className="py-20 bg-gray-900">
+                <div className="container mx-auto px-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center mb-12"
+                    >
+                        <h2 className="text-5xl font-bold text-blue-400 mb-8">Learn & Educate</h2>
+                        <p className="text-lg mb-6">
+                            Dive into our educational resources to expand your knowledge and skills. We offer various materials and courses to support your learning journey.
                         </p>
+                    </motion.div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                        {/* Learning Resource Component */}
+                        {[
+                            { title: 'Web Development Basics', description: 'A comprehensive guide to getting started with web development.', linkText: 'Explore Course' },
+                            { title: 'Entrepreneurship 101', description: 'Learn the fundamentals of starting and running a business.', linkText: 'Start Learning' },
+                            { title: 'Innovative Problem-Solving', description: 'Techniques and strategies for tackling complex challenges.', linkText: 'View Resources' },
+                        ].map((resource, index) => (
+                            <motion.div
+                                key={index}
+                                className="bg-gray-700 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.2, duration: 0.8 }}
+                            >
+                                <h3 className="text-xl font-semibold mb-2 text-blue-400">{resource.title}</h3>
+                                <p className="text-gray-300 mb-4">{resource.description}</p>
+                                <a href="#" className="text-blue-400 hover:underline">{resource.linkText}</a>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="bg-blue-900 text-white py-8">
-                <div className="container mx-auto px-4 text-center">
-                    <div className="flex justify-center mb-4">
-                        <a href="#" target="_blank" className="mx-2 text-gray-400 hover:text-gray-300"><i className="fab fa-facebook fa-2x"></i></a>
-                        <a href="#" target="_blank" className="mx-2 text-gray-400 hover:text-gray-300"><i className="fab fa-twitter fa-2x"></i></a>
-                        <a href="#" target="_blank" className="mx-2 text-gray-400 hover:text-gray-300"><i className="fab fa-linkedin fa-2x"></i></a>
-                        <a href="#" target="_blank" className="mx-2 text-gray-400 hover:text-gray-300"><i className="fab fa-instagram fa-2x"></i></a>
+            <footer className="bg-blue-900 text-white py-6">
+                <div className="container mx-auto px-6 text-center">
+                    <p className="mb-4">© 2024 InnovateUSA. All rights reserved.</p>
+                    <div className="flex justify-center space-x-6">
+                        <a href="#" className="hover:text-blue-400">Privacy Policy</a>
+                        <a href="#" className="hover:text-blue-400">Terms of Service</a>
+                        <a href="#" className="hover:text-blue-400">Contact Us</a>
                     </div>
-                    <p>&copy; 2024 InnovateUSA. All rights reserved.</p>
-                    <p className="mt-1">Email: info@innovateusa.org | Phone: (123) 456-7890</p>
-                    <a href="#contact" className="inline-block mt-4 bg-blue-400 text-gray-900 px-4 py-2 rounded hover:bg-blue-500">Contact Us</a>
                 </div>
             </footer>
         </div>

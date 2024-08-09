@@ -19,7 +19,7 @@ const ContactForm = () => {
     setFormData({ name: '', email: '', message: '' });
   };
 
-  return (
+  return ( 
     <form onSubmit={handleSubmit} className="bg-gray-800 p-8 rounded-lg shadow-lg">
       <div className="mb-4">
         <label htmlFor="name" className="block text-gray-300 mb-2">Name</label>
