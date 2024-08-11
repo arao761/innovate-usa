@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
 
 const InnovateUSA: React.FC = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,6 +11,7 @@ const InnovateUSA: React.FC = () => {
     };
 
     return (
+
         <div className="font-roboto text-gray-100 bg-black">
             {/* Header */}
             <header className="bg-blue-900 text-white py-6 sticky top-0 z-50 shadow-md">
@@ -300,10 +302,10 @@ const InnovateUSA: React.FC = () => {
             <p className="text-lg mb-6">Follow us on social media to stay updated with the latest news and updates.</p>
             <div className="flex space-x-6 mb-4">
                 <a href="https://tiktok.com/@innovateusa" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
-                    <i className="fab fa-tiktok fa-2x"></i>
+                    <i className="fa-brands fa-tiktok fa-2x"></i>
                 </a>
                 <a href="https://instagram.com/innovateusa" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors">
-                    <i className="fab fa-instagram fa-2x"></i>
+                    <i className="fa-brands fa-instagram fa-2x"></i>
                 </a>
             </div>
         </div>
