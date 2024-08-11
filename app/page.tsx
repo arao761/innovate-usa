@@ -105,7 +105,7 @@ const InnovateUSA: React.FC = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {/* Team Member Component */}
                         {[
-                            { name: 'Sahasra Jonnalagadda', role: 'Executive Director', imgSrc: 'https://placehold.co/150x150', description: 'Oversees the overall vision, strategy, and execution of InnovateUSA.' },
+                            { name: 'Sahasra Jonnalagadda', role: 'Executive Director', imgSrc: 'https://media.licdn.com/dms/image/D4E03AQF8wnLbVprK5A/profile-displayphoto-shrink_400_400/0/1713407413055?e=1729123200&v=beta&t=9hE0GRLmBC7m_6u07f8b5qKfeHZQLihHMgOi0KcsHbw', description: 'Oversees the overall vision, strategy, and execution of InnovateUSA.' },
                             { name: 'Roshini Mantena', role: 'Program Manager', imgSrc: 'https://placehold.co/150x150', description: 'Manages day-to-day operations, coordinates team efforts.' },
                             { name: 'Rashmi Mantena', role: 'Partnership Director', imgSrc: 'https://placehold.co/150x150', description: 'Focuses on building strategic partnerships.' },
                             { name: 'Ruhi Sharma', role: 'Treasurer', imgSrc: 'https://placehold.co/150x150', description: 'Manages the organization finances and budgeting.' },
