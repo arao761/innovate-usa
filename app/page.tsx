@@ -24,7 +24,7 @@ const InnovateUSA: React.FC = () => {
                             <li><a href="#team" className="hover:text-blue-400 transition-colors">Team</a></li>
                             <li><a href="#events" className="hover:text-blue-400 transition-colors">Events</a></li>
                             <li><a href="#competitions" className="hover:text-blue-400 transition-colors">Competitions</a></li>
-                            <li><a href="#learn" className="hover:text-blue-400 transition-colors">Learn & Educate</a></li>
+                            <li><a href="#learn-education" className="hover:text-blue-400 transition-colors">Learn & Educate</a></li>
                         </ul>
                     </nav>
                     <button 
