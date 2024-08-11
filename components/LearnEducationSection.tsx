@@ -27,11 +27,11 @@ const LearnEducationSection: React.FC = () => {
                 <div className="bg-gray-700 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 mb-12">
                     <h3 className="text-2xl font-semibold mb-4 text-blue-400">What is the American Enterprise System?</h3>
                     <p className="text-gray-300 mb-4">
-                        The American Enterprise System is the U.S.A's free enterprise system, meaning that individuals, not the government, own most of our country's resources. Free enterprise also means that supply and demand determine how our resources are used.
+                        The American Enterprise System is the U.S.A&amos;s free enterprise system, meaning that individuals, not the government, own most of our country&amos;s resources. Free enterprise also means that supply and demand determine how our resources are used.
                     </p>
                     <h3 className="text-2xl font-semibold mb-4 text-blue-400">How are businesses and the American Enterprise System related?</h3>
                     <p className="text-gray-300 mb-4">
-                        The U.S's American Enterprise System promotes individual freedom, allowing individuals to choose their occupations, start businesses, and make their own economic decisions. This encourages people to pursue their passions, take risks, and reach their full potential.
+                        The U.S&amos;s American Enterprise System promotes individual freedom, allowing individuals to choose their occupations, start businesses, and make their own economic decisions. This encourages people to pursue their passions, take risks, and reach their full potential.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
