@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-    'https://placehold.co/1920x1080/1',
-    'https://placehold.co/1920x1080/2',
-    'https://placehold.co/1920x1080/3',
-    // Add more image URLs as needed
+    'https://media.licdn.com/dms/image/D4E03AQF8wnLbVprK5A/profile-displayphoto-shrink_400_400/0/1713407413055?e=1729123200&v=beta&t=9hE0GRLmBC7m_6u07f8b5qKfeHZQLihHMgOi0KcsHbw',
+    'https://media.licdn.com/dms/image/D4E03AQEtwmPBQtNGWA/profile-displayphoto-shrink_400_400/0/1711079713525?e=1729123200&v=beta&t=5B2hPSCos-jhaAeqckqteO6pYUznoP0i-wrhi7QdRrw',
 ];
 
 const HeroSection: React.FC = () => {
@@ -16,7 +14,7 @@ const HeroSection: React.FC = () => {
             setCurrentImageIndex((prevIndex) => 
                 prevIndex === images.length - 1 ? 0 : prevIndex + 1
             );
-        }, 5000); // Change image every 5 seconds
+        }, 5000);
 
         return () => clearInterval(interval);
     }, []);
