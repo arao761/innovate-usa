@@ -84,9 +84,6 @@ const InnovateUSA: React.FC = () => {
                         <p className="text-lg mb-6">
                             Our mission is to educate and empower the community with comprehensive knowledge of the American Enterprise System and business concepts. We seek to inform, inspire, and implement these ideas, fostering a deep understanding that lays the groundwork for future success.
                         </p>
-                        <p className="text-lg">
-                            Since our inception, we have supported over 10,000 innovators, hosted 500+ events, and facilitated the creation of 200+ startups. Our community continues to grow and thrive.
-                        </p>
                     </motion.div>
                 </div>
             </section>
