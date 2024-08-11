@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaTiktok, FaInstagram } from 'react-icons/fa';
-
+import './Team.css'; 
 
 const InnovateUSA: React.FC = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -105,11 +105,11 @@ const InnovateUSA: React.FC = () => {
                             { name: 'Sahasra Jonnalagadda', role: 'Executive Director', imgSrc: 'https://media.licdn.com/dms/image/D4E03AQF8wnLbVprK5A/profile-displayphoto-shrink_400_400/0/1713407413055?e=1729123200&v=beta&t=9hE0GRLmBC7m_6u07f8b5qKfeHZQLihHMgOi0KcsHbw', description: 'Oversees the overall vision, strategy, and execution of InnovateUSA.' },
                             { name: 'Roshini Mantena', role: 'Program Manager', imgSrc: '/images/image4.jpg', description: 'Manages day-to-day operations, coordinates team efforts.' },
                             { name: 'Rashmi Mantena', role: 'Partnership Director', imgSrc: '/images/image5.jpg', description: 'Focuses on building strategic partnerships.' },
-                            { name: 'Ruhi Sharma', role: 'Treasurer', imgSrc: '/images/image3.jpg', description: 'Manages the organization finances and budgeting.' },
+                            { name: 'Ruhi Sharma', role: 'Treasurer', imgSrc: 'https://media.licdn.com/dms/image/v2/D4D03AQFGpuBXLPUpDA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723264568304?e=1729123200&v=beta&t=FMXTh2dRof4NZSkln9yB0VewhIAQUq8T_eZoXrDBXeg', description: 'Manages the organization finances and budgeting.' },
                             { name: 'Ankit Rao', role: 'Webmaster', imgSrc: 'https://media.licdn.com/dms/image/D4E03AQEtwmPBQtNGWA/profile-displayphoto-shrink_400_400/0/1711079713525?e=1729123200&v=beta&t=5B2hPSCos-jhaAeqckqteO6pYUznoP0i-wrhi7QdRrw', description: 'Oversees the design, development, and maintenance of the website.' },
                             { name: 'Cara King', role: 'Director of Public Affairs', imgSrc: '/images/image6.jpg', description: 'Leads public relations efforts and manages media outreach.' },
-                            { name: 'Deryck Toney', role: 'Secretary', imgSrc: '/images/image7.jpg', description: 'Handles administrative tasks and keeps minutes of meetings.' },
-                            { name: 'Katie Helge', role: 'Director of Media', imgSrc: '/images/image2.jpg', description: 'Oversees media production and strategy.' },
+                            { name: 'Deryck Toney', role: 'Secretary', imgSrc: '/images/image7.jpg', description: 'Handles administrative tasks and keeps track of meetings.' },
+                            { name: 'Katie Helge', role: 'Director of Media', imgSrc: 'https://media.licdn.com/dms/image/D4D03AQHnAvzARWprdQ/profile-displayphoto-shrink_800_800/0/1722291581569?e=1729123200&v=beta&t=aF5dHBrrMUoZ84tPCIcTPxXJz_nTWlDTVwfMT763kd4', description: 'Oversees media production and strategy.' },
                         ].map((member, index) => (
                             <motion.div
                                 key={index}
