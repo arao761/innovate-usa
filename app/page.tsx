@@ -10,7 +10,6 @@ import CompetitionsSection from '@/components/CompetitionsSection';
 import LearnEducationSection from '@/components/LearnEducationSection';
 import Footer from '@/components/Footer';
 
-// ... rest of the code
 const InnovateUSA: React.FC = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
