@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const images = [
     'https://media.licdn.com/dms/image/D4E03AQF8wnLbVprK5A/profile-displayphoto-shrink_400_400/0/1713407413055?e=1729123200&v=beta&t=9hE0GRLmBC7m_6u07f8b5qKfeHZQLihHMgOi0KcsHbw',
@@ -18,6 +19,18 @@ const HeroSection: React.FC = () => {
 
         return () => clearInterval(interval);
     }, []);
+
+    const goToPrevious = () => {
+        setCurrentImageIndex((prevIndex) => 
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+    };
+
+    const goToNext = () => {
+        setCurrentImageIndex((prevIndex) => 
+            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+    };
 
     return (
         <section className="relative h-screen overflow-hidden">
@@ -51,6 +64,20 @@ const HeroSection: React.FC = () => {
                     Empowering students and communities through education, creativity, and enterprise
                 </motion.p>
             </div>
+            <button 
+    aria-label="Previous image"
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300"
+    onClick={goToPrevious}
+>
+    <FaChevronLeft size={24} />
+</button>
+<button 
+    aria-label="Next image"
+    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300"
+    onClick={goToNext}
+>
+    <FaChevronRight size={24} />
+</button>
         </section>
     );
 };
