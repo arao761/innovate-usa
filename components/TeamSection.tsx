@@ -14,29 +14,35 @@ const teamMembers = [
 
 const TeamSection: React.FC = () => {
     return (
-        <section id="team" className="py-20 bg-gray-800">
+        <section id="team" className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
             <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-center mb-12"
+                    className="text-center mb-16"
                 >
-                    <h2 className="text-5xl font-bold text-blue-400 mb-8">Our Team</h2>
+                    <h2 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-4">Our Innovative Team</h2>
+                    <p className="text-xl text-gray-300">Meet the minds behind InnovateUSA</p>
                 </motion.div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     {teamMembers.map((member, index) => (
                         <motion.div
                             key={index}
-                            className="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
+                            className="relative group"
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1, duration: 0.6 }}
                         >
-                            <img src={member.imgSrc} alt={`Portrait of ${member.name}`} className="w-32 h-32 mx-auto rounded-full mb-4" />
-                            <h3 className="text-xl font-semibold mb-2 text-blue-400">{member.name}</h3>
-                            <p className="text-gray-400 mb-4">{member.role}</p>
-                            <p className="text-gray-300">{member.description}</p>
+                            <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-105">
+                                <img src={member.imgSrc} alt={`Portrait of ${member.name}`} className="w-full h-80 object-cover object-center" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                    <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
+                                    <p className="text-blue-300 font-semibold mb-2">{member.role}</p>
+                                    <p className="text-gray-200 text-sm">{member.description}</p>
+                                </div>
+                            </div>
                         </motion.div>
                     ))}
                 </div>
