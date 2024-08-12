@@ -20,13 +20,17 @@ const HeroSection: React.FC = () => {
         return () => clearInterval(interval);
     }, []);
 
-    const goToPrevious = () => {
+    const goToPrevious = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        console.log('Previous button clicked');
         setCurrentImageIndex((prevIndex) => 
             prevIndex === 0 ? images.length - 1 : prevIndex - 1
         );
     };
 
-    const goToNext = () => {
+    const goToNext = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        console.log('Next button clicked');
         setCurrentImageIndex((prevIndex) => 
             prevIndex === images.length - 1 ? 0 : prevIndex + 1
         );
@@ -65,19 +69,19 @@ const HeroSection: React.FC = () => {
                 </motion.p>
             </div>
             <button 
-    aria-label="Previous image"
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300"
-    onClick={goToPrevious}
->
-    <FaChevronLeft size={24} />
-</button>
-<button 
-    aria-label="Next image"
-    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300"
-    onClick={goToNext}
->
-    <FaChevronRight size={24} />
-</button>
+                aria-label="Previous image"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
+                onClick={goToPrevious}
+            >
+                <FaChevronLeft size={24} />
+            </button>
+            <button 
+                aria-label="Next image"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
+                onClick={goToNext}
+            >
+                <FaChevronRight size={24} />
+            </button>
         </section>
     );
 };
