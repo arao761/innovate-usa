@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaChalkboardTeacher, FaUsers, FaPiggyBank, FaHandshake, FaChartLine, FaBullseye, FaGlobe } from 'react-icons/fa';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const impactItems = [
     { icon: <FaChalkboardTeacher size={40} className="text-blue-400 mb-4" />, title: 'Education and Awareness', description: '100+ students participated in workshops and presentations, fostering an understanding of the American Enterprise System.' },
@@ -14,9 +17,8 @@ const impactItems = [
 
 const ImpactSection: React.FC = () => {
     return (
-        <section id="impact" className="relative py-20 bg-gray-700 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-800 via-gray-600 to-gray-700 opacity-25"></div>
-            <div className="container mx-auto px-6 relative z-10">
+        <section id="impact" className="py-20 bg-gray-700">
+            <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -28,28 +30,32 @@ const ImpactSection: React.FC = () => {
                         Discover the profound impact of our initiatives on education, community engagement, and beyond.
                     </p>
                 </motion.div>
-                <div className="relative">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                        {impactItems.map((impact, index) => (
+                <Swiper
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    pagination={{ clickable: true }}
+                    breakpoints={{
+                        640: { slidesPerView: 1 },
+                        768: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 },
+                    }}
+                    className="swiper-container"
+                >
+                    {impactItems.map((impact, index) => (
+                        <SwiperSlide key={index}>
                             <motion.div
-                                key={index}
-                                className="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden"
+                                className="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 relative flex flex-col items-center text-center"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.2, duration: 0.8 }}
                             >
-                                <div className="absolute top-0 left-0 w-full h-1 bg-blue-400"></div>
-                                <div className="absolute top-0 right-0 w-1 h-full bg-blue-400"></div>
-                                <div className="relative z-10 flex flex-col items-center text-center">
-                                    {impact.icon}
-                                    <h3 className="text-xl font-semibold mb-2 text-blue-400">{impact.title}</h3>
-                                    <p className="text-gray-300">{impact.description}</p>
-                                </div>
-                                <div className="absolute inset-0 bg-gradient-to-t from-transparent to-gray-800 opacity-50"></div>
+                                {impact.icon}
+                                <h3 className="text-xl font-semibold mb-2 text-blue-400">{impact.title}</h3>
+                                <p className="text-gray-300">{impact.description}</p>
                             </motion.div>
-                        ))}
-                    </div>
-                </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         </section>
     );
