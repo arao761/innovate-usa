@@ -41,10 +41,6 @@ const CompetitionsSection: React.FC = () => {
                                 <span className="text-gray-300">Mini-market exercise teaching budgeting and economic principles</span>
                             </li>
                         </ul>
-                        <a href="#" className="inline-flex items-center bg-yellow-400 text-gray-900 py-3 px-6 rounded-full hover:bg-yellow-500 transition-colors duration-300 text-lg font-semibold">
-                            Explore More
-                            <FaArrowRight className="ml-2" />
-                        </a>
                     </div>
                 </motion.div>
             </div>

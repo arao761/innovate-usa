@@ -42,7 +42,6 @@ const EventsSection: React.FC = () => {
                                 🏆 Winners were awarded $25 Amazon gift cards!
                             </p>
                         </div>
-                        <a href="#" className="inline-block bg-blue-500 text-white py-3 px-6 rounded-full hover:bg-blue-600 transition-colors duration-300 text-lg font-semibold">Learn More</a>
                     </div>
                 </motion.div>
             </div>
