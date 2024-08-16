@@ -1,41 +1,63 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaLightbulb, FaChalkboardTeacher, FaArrowRight } from 'react-icons/fa';
 
 const CompetitionsSection: React.FC = () => {
     return (
-        <section id="competitions" className="py-20 bg-gray-800">
+        <section id="competitions" className="py-20 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900">
             <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-center mb-12"
+                    className="text-center mb-16"
                 >
-                    <h2 className="text-5xl font-bold text-blue-400 mb-8">Competitions</h2>
-                    <p className="text-lg mb-6">
+                    <h2 className="text-6xl font-bold text-yellow-400 mb-8">Competitions</h2>
+                    <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                         Participate in our exciting competitions to showcase your skills and creativity. Each competition is designed to challenge and inspire you.
                     </p>
                 </motion.div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <motion.div
-                        className="bg-gray-700 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <h3 className="text-xl font-semibold mb-2 text-blue-400">Workshop: Presentation and Activities</h3>
-                        <p className="text-gray-300 mb-4">
-                            Students learned about the American Enterprise System through interactive presentations and activities, including a lemonade stand simulation and a mini-market exercise that taught budgeting and economic principles.
+                <motion.div
+                    className="max-w-4xl mx-auto"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                >
+                    <div className="bg-gray-800 p-10 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20">
+                        <div className="flex items-center mb-6">
+                            <FaChalkboardTeacher className="text-4xl text-yellow-400 mr-4" />
+                            <h3 className="text-3xl font-bold text-yellow-400">Workshop: Presentation and Activities</h3>
+                        </div>
+                        <p className="text-gray-300 mb-8 text-lg leading-relaxed">
+                            Students learned about the American Enterprise System through interactive presentations and activities, including:
                         </p>
-                        <a href="#" className="text-blue-400 hover:underline">Explore More</a>
-                    </motion.div>
-                </div>
+                        <ul className="list-none space-y-4 mb-8">
+                            <li className="flex items-start">
+                                <FaLightbulb className="text-yellow-400 mt-1 mr-3" />
+                                <span className="text-gray-300">Lemonade stand simulation</span>
+                            </li>
+                            <li className="flex items-start">
+                                <FaLightbulb className="text-yellow-400 mt-1 mr-3" />
+                                <span className="text-gray-300">Mini-market exercise teaching budgeting and economic principles</span>
+                            </li>
+                        </ul>
+                        <a href="#" className="inline-flex items-center bg-yellow-400 text-gray-900 py-3 px-6 rounded-full hover:bg-yellow-500 transition-colors duration-300 text-lg font-semibold">
+                            Explore More
+                            <FaArrowRight className="ml-2" />
+                        </a>
+                    </div>
+                </motion.div>
             </div>
-            <div className="text-center my-12">
-                <a href="#" className="bg-blue-400 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-500 transition-colors duration-300">
+            <motion.div 
+                className="text-center mt-16"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+            >
+                <a href="#" className="bg-gray-800 text-yellow-400 px-8 py-4 rounded-full shadow-lg hover:bg-gray-700 transition-all duration-300 text-xl font-semibold border-2 border-yellow-400">
                     Upcoming Competitions and Events
                 </a>
-            </div>
+            </motion.div>
         </section>
     );
 };
