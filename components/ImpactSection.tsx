@@ -14,7 +14,7 @@ const impactItems = [
 
 const ImpactSection: React.FC = () => {
     return (
-        <section id="impact" className="py-20 bg-gradient-to-b from-gray-800 to-blue-800">
+        <section id="impact" className="py-20 bg-gradient-to-b from-gray-900 to-blue-900">
             <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
