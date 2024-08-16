@@ -22,7 +22,7 @@ const ImpactSection: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-6xl font-bold text-white mb-4">Our Impact</h2>
+                    <h2 className="text-6xl font-bold text-blue mb-4">Our Impact</h2>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                         Discover the profound impact of our initiatives on education, community engagement, and beyond.
                     </p>
