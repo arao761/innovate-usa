@@ -50,12 +50,12 @@ const HeroSection: React.FC = () => {
                 />
             </AnimatePresence>
             <div className="absolute inset-0 bg-black opacity-50"></div>
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 md:px-6">
                 <motion.h1
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="text-6xl font-bold mb-4"
+                    className="text-4xl md:text-6xl font-bold mb-2 md:mb-4"
                 >
                     InnovateUSA
                 </motion.h1>
@@ -63,24 +63,24 @@ const HeroSection: React.FC = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="text-2xl mb-6"
+                    className="text-lg md:text-2xl mb-4 md:mb-6"
                 >
                     Empowering students and communities through education, creativity, and enterprise
                 </motion.p>
             </div>
             <button 
                 aria-label="Previous image"
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
+                className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 md:p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
                 onClick={goToPrevious}
             >
-                <FaChevronLeft size={24} />
+                <FaChevronLeft size={20} md:size={24} />
             </button>
             <button 
                 aria-label="Next image"
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
+                className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 md:p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
                 onClick={goToNext}
             >
-                <FaChevronRight size={24} />
+                <FaChevronRight size={20} md:size={24} />
             </button>
         </section>
     );
