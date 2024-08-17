@@ -3,8 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const images = [
-    'https://media.licdn.com/dms/image/D4E03AQF8wnLbVprK5A/profile-displayphoto-shrink_400_400/0/1713407413055?e=1729123200&v=beta&t=9hE0GRLmBC7m_6u07f8b5qKfeHZQLihHMgOi0KcsHbw',
-    'https://media.licdn.com/dms/image/D4E03AQEtwmPBQtNGWA/profile-displayphoto-shrink_400_400/0/1711079713525?e=1729123200&v=beta&t=5B2hPSCos-jhaAeqckqteO6pYUznoP0i-wrhi7QdRrw',
+    '/images/IMG_8962.jpeg'
 ];
 
 const HeroSection: React.FC = () => {
