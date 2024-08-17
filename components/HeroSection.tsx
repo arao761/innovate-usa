@@ -73,14 +73,14 @@ const HeroSection: React.FC = () => {
                 className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 md:p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
                 onClick={goToPrevious}
             >
-                <FaChevronLeft size={20} md:size={24} />
+                <FaChevronLeft size={20} />
             </button>
             <button 
                 aria-label="Next image"
                 className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 md:p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
                 onClick={goToNext}
             >
-                <FaChevronRight size={20} md:size={24} />
+                <FaChevronRight size={20}/>
             </button>
         </section>
     );
