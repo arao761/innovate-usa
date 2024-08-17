@@ -14,7 +14,7 @@ const teamMembers = [
 
 const TeamSection: React.FC = () => {
     return (
-        <section id="team" className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+        <section id="team" className="py-20 bg-gradient-to-b from-blue-500 to-blue-800">
             <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,7 @@ const TeamSection: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-6xl font-bold text-transparent bg-clip-text text-blue-500 mb-4">Our Innovative Team</h2>
+                    <h2 className="text-6xl font-bold text-blue-500 mb-4">Our Innovative Team</h2>
                     <p className="text-xl text-gray-300">Meet the minds behind InnovateUSA</p>
                 </motion.div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
