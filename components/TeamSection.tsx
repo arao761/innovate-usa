@@ -14,18 +14,18 @@ const teamMembers = [
 
 const TeamSection: React.FC = () => {
     return (
-        <section id="team" className="py-20 bg-gradient-to-b from-gray-800 to-blue-900">
-            <div className="container mx-auto px-6">
+        <section id="team" className="py-12 md:py-20 bg-gradient-to-b from-gray-800 to-blue-900">
+            <div className="container mx-auto px-4 md:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-center mb-16"
+                    className="text-center mb-10 md:mb-16"
                 >
-                    <h2 className="text-6xl font-bold text-blue-500 mb-4">Our Innovative Team</h2>
-                    <p className="text-xl text-gray-300">Meet the minds behind InnovateUSA</p>
+                    <h2 className="text-4xl md:text-6xl font-bold text-blue-500 mb-2 md:mb-4">Our Innovative Team</h2>
+                    <p className="text-lg md:text-xl text-gray-300">Meet the minds behind InnovateUSA</p>
                 </motion.div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
                     {teamMembers.map((member, index) => (
                         <motion.div
                             key={index}
@@ -35,12 +35,12 @@ const TeamSection: React.FC = () => {
                             transition={{ delay: index * 0.1, duration: 0.6 }}
                         >
                             <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-105">
-                                <img src={member.imgSrc} alt={`Portrait of ${member.name}`} className="w-full h-80 object-cover object-center" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                                    <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
-                                    <p className="text-blue-300 font-semibold mb-2">{member.role}</p>
-                                    <p className="text-gray-200 text-sm">{member.description}</p>
+                                <img src={member.imgSrc} alt={`Portrait of ${member.name}`} className="w-full h-64 md:h-80 object-cover object-center" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 transform translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                    <h3 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2">{member.name}</h3>
+                                    <p className="text-blue-300 font-semibold mb-1 md:mb-2">{member.role}</p>
+                                    <p className="text-gray-200 text-xs md:text-sm hidden md:block">{member.description}</p>
                                 </div>
                             </div>
                         </motion.div>
