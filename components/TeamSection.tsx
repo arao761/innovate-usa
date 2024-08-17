@@ -8,7 +8,7 @@ const teamMembers = [
     { name: 'Ruhi Sharma', role: 'Treasurer', imgSrc: 'https://media.licdn.com/dms/image/v2/D4D03AQFGpuBXLPUpDA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723264568304?e=1729123200&v=beta&t=FMXTh2dRof4NZSkln9yB0VewhIAQUq8T_eZoXrDBXeg', description: 'Manages the organization finances and budgeting.' },
     { name: 'Ankit Rao', role: 'Webmaster', imgSrc: 'https://media.licdn.com/dms/image/D4E03AQEtwmPBQtNGWA/profile-displayphoto-shrink_400_400/0/1711079713525?e=1729123200&v=beta&t=5B2hPSCos-jhaAeqckqteO6pYUznoP0i-wrhi7QdRrw', description: 'Oversees the design, development, and maintenance of the website.' },
     { name: 'Cara King', role: 'Director of Public Affairs', imgSrc: '/images/image6.jpg', description: 'Leads public relations efforts and manages media outreach.' },
-    { name: 'Deryck Toney', role: 'Secretary', imgSrc: '/images/image7.jpg', description: 'Handles administrative tasks and keeps track of meetings.' },
+    { name: 'Deryck Toney', role: 'Secretary', imgSrc: '/images/8.jpeg', description: 'Handles administrative tasks and keeps track of meetings.' },
     { name: 'Katie Helge', role: 'Director of Media', imgSrc: 'https://media.licdn.com/dms/image/D4D03AQHnAvzARWprdQ/profile-displayphoto-shrink_800_800/0/1722291581569?e=1729123200&v=beta&t=aF5dHBrrMUoZ84tPCIcTPxXJz_nTWlDTVwfMT763kd4', description: 'Oversees media production and strategy.' },
 ];
 
