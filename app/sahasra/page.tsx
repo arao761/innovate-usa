@@ -26,10 +26,13 @@ const SahasraPage: React.FC = () => {
                                 <div className="prose prose-lg max-w-none text-gray-600">
                                     <p className="mb-4">
                                     Sahasra Jonnalagadda, a high school senior with a deep passion for politics, economics, and business, founded InnovateUSA after recognizing a gap in business knowledge among her peers. This insight led her to launch an educational campaign focused on promoting the American Enterprise system and fostering a deeper understanding of business principles.
-                    </p>
+                                    </p>
                     <p>
                         Sahasra&apos;s commitment to empowering others through education drives the mission of InnovateUSA. Her experience as a Virginia Senate and a Congressional campaign intern helped her discover her niche interest at the intersection of politics and education.
                     </p>
+
+                    <br />
+                    
                     <p>
                         As the Founder and Executive Director of InnovateUSA, she oversees the overall vision, strategy, and execution of the campaign and is responsible for guiding the project&apos;s direction. Sahasra is excited to expand InnovateUSA and work alongside her team to ensure the campaign&apos;s success.
                     </p>
