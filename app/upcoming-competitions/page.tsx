@@ -11,7 +11,7 @@ const UpcomingCompetitions: React.FC = () => {
                 Stay tuned! Our upcoming competitions and events will be announced here soon.
             </p>
             <p className="text-lg md:text-xl text-yellow-400 mb-12 text-center">
-                TBA
+                TBA. Will be announced soon. Stay tuned!
             </p>
             <Link href="/" passHref>
                 <a className="bg-gray-800 text-blue-400 px-6 py-3 rounded-full shadow-lg hover:bg-gray-700 transition-all duration-300 text-lg font-semibold border-2 border-blue-400">
