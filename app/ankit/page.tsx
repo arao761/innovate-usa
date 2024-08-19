@@ -1,30 +1,27 @@
 import React from 'react';
 import Head from 'next/head';
 
-const SahasraPage: React.FC = () => {
+const AnkitPage: React.FC = () => {
     return (
         <>
             <Head>
-                <title>Sahasra Jonnalagadda - InnovateUSA</title>
-                <meta name="description" content="Sahasra Jonnalagadda, Founder and Executive Director of InnovateUSA" />
+                <title>Ankit Rao - InnovateUSA</title>
+                <meta name="description" content="Ankit Rao, Webmaster of InnovateUSA" />
             </Head>
             <div className="container mx-auto px-4 py-12">
-                <h1 className="text-4xl font-bold mb-4">Sahasra Jonnalagadda</h1>
-                <h2 className="text-2xl text-blue-500 mb-4">Founder and Executive Director</h2>
+                <h1 className="text-4xl font-bold mb-4">Ankit Rao</h1>
+                <h2 className="text-2xl text-blue-500 mb-4">Webmaster</h2>
                 <img 
-                    src="https://media.licdn.com/dms/image/D4E03AQF8wnLbVprK5A/profile-displayphoto-shrink_400_400/0/1713407413055?e=1729123200&v=beta&t=9hE0GRLmBC7m_6u07f8b5qKfeHZQLihHMgOi0KcsHbw" 
-                    alt="Sahasra Jonnalagadda" 
+                    src="https://media.licdn.com/dms/image/D4E03AQEtwmPBQtNGWA/profile-displayphoto-shrink_400_400/0/1711079713525?e=1729123200&v=beta&t=5B2hPSCos-jhaAeqckqteO6pYUznoP0i-wrhi7QdRrw" 
+                    alt="Ankit Rao" 
                     className="w-64 h-64 object-cover rounded-full mb-6"
                 />
                 <div className="prose prose-lg max-w-none">
                     <p>
-                        Sahasra Jonnalagadda, a high school senior with a deep passion for politics, economics, and business, founded InnovateUSA after recognizing a gap in business knowledge among her peers. This insight led her to launch an educational campaign focused on promoting the American Enterprise system and fostering a deeper understanding of business principles.
+                        Ankit Rao, a high school senior with a strong passion for computer science and business, is dedicated to coding and website development. As the President and Founder of his school&amos;s Web and Mobile App Development Club, Ankit has developed his skills to a professional level, specializing in creating and managing websites.
                     </p>
                     <p>
-                        Sahasra&amos;s commitment to empowering others through education drives the mission of InnovateUSA. Her experience as a Virginia Senate and a Congressional campaign intern helped her discover her niche interest at the intersection of politics and education.
-                    </p>
-                    <p>
-                        As the Founder and Executive Director of InnovateUSA, she oversees the overall vision, strategy, and execution of the campaign and is responsible for guiding the project&amos;s direction. Sahasra is excited to expand InnovateUSA and work alongside her team to ensure the campaign&amos;s success.
+                        His extensive experience equips him to oversee the InnovateUSA website, ensuring that it remains a reliable and consistent platform for documenting all campaign activities.
                     </p>
                 </div>
             </div>
@@ -32,4 +29,4 @@ const SahasraPage: React.FC = () => {
     );
 };
 
-export default SahasraPage;
+export default AnkitPage;
