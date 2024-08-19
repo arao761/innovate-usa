@@ -37,14 +37,14 @@ const Header: React.FC<HeaderProps> = ({ isMobileMenuOpen, toggleMobileMenu }) =
 
     return (
         <header className="bg-blue-900 text-white py-6 sticky top-0 z-50 shadow-md">
-            <div className="container mx-auto px-6 flex justify-between items-center relative">
+            <div className="container mx-auto px-6 flex justify-between items-center">
                 <h1 
-                    className="text-4xl font-bold cursor-pointer hover:text-blue-400 transition-colors md:absolute md:left-6"
+                    className="text-4xl font-bold cursor-pointer hover:text-blue-400 transition-colors"
                     onClick={scrollToHero}
                 >
                     InnovateUSA
                 </h1>
-                <nav className="hidden md:flex md:mx-auto md:justify-center md:flex-grow">
+                <nav className="hidden md:flex">
                     <ul className="flex space-x-8">
                         <li><a href="#about" className="hover:text-blue-400 transition-colors">About</a></li>
                         <li><a href="#team" className="hover:text-blue-400 transition-colors">Team</a></li>
