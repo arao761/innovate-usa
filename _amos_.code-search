@@ -1,0 +1,44 @@
+# Query: &amos;
+# ContextLines: 1
+
+12 results - 5 files
+
+app/ankit/page.tsx:
+  20                      <p>
+  21:                         Ankit Rao, a high school senior with a strong passion for computer science and business, is dedicated to coding and website development. As the President and Founder of his school&amos;s Web and Mobile App Development Club, Ankit has developed his skills to a professional level, specializing in creating and managing websites.
+  22                      </p>
+
+app/cara/page.tsx:
+  20                      <p>
+  21:                         Cara King, a high school senior with a deep passion for journalism, uses her creativity to make a meaningful impact on her community. Whether through large or small initiatives, Cara&amos;s commitment to service shines through.
+  22                      </p>
+  23                      <p>
+  24:                         As a member of the school&amos;s SCA, she excels in communication and collaboration, fostering strong connections within the InnovateUSA team. Her talent for crafting strategic plans and engaging everyone in their roles strengthens the team&amos;s cohesion.
+  25                      </p>
+  26                      <p>
+  27:                         Cara is also devoted to encouraging partnerships with other organizations to promote the significance of the American Enterprise System in today&amos;s world.
+  28                      </p>
+
+app/deryck/page.tsx:
+  23                      <p>
+  24:                         As Director of Education for his school&amos;s Model UN chapter, Deryck has successfully organized a series of impactful workshops, honing his organizational skills. He is committed to creating a well-structured environment for future events and meticulously planning meetings to ensure the success of the InnovateUSA team.
+  25                      </p>
+  26                      <p>
+  27:                         Additionally, he looks forward to collaborating with Media Specialist Katie Helge to produce a short film or documentary that captures InnovateUSA&amos;s journey and impact.
+  28                      </p>
+
+app/katie/page.tsx:
+  26                      <p>
+  27:                         Her dedication to consistent, impactful posting is driving the initiative&amos;s growth and success.
+  28                      </p>
+
+app/ruhi/page.tsx:
+  20                      <p>
+  21:                         Ruhi Sharma, a high school junior with a growing passion for business and finance, aspires to become a financial advisor. She is currently spearheading fundraisers to support InnovateUSA, leveraging her skills from her involvement in her school&amos;s DECA chapter.
+  22                      </p>
+  23                      <p>
+  24:                         Ruhi is committed to using her financial expertise to identify and execute the most effective fundraising strategies, ensuring each initiative contributes significantly to InnovateUSA&amos;s growth.
+  25                      </p>
+  26                      <p>
+  27:                         Her extensive experience enables her to manage all of InnovateUSA&amos;s fundraising efforts, driving the team&amos;s success through well-planned and impactful events.
+  28                      </p>

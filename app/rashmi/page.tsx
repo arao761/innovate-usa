@@ -18,10 +18,10 @@ const RashmiPage: React.FC = () => {
                 />
                 <div className="prose prose-lg max-w-none">
                     <p>
-                        Rashmi Mantena is a high school senior with a passion for business and computer science, playing a crucial role in InnovateUSA&amos;s growth and success. As Partnership Director, she focuses on building strategic partnerships with businesses, educational institutions, and community organizations to support InnovateUSA&amos;s mission and enhance its impact.
+                        Rashmi Mantena is a high school senior with a passion for business and computer science, playing a crucial role in InnovateUSA&apos;s growth and success. As Partnership Director, she focuses on building strategic partnerships with businesses, educational institutions, and community organizations to support InnovateUSA&apos;s mission and enhance its impact.
                     </p>
                     <p>
-                        Rashmi&amos;s dedication is evident in her active involvement in the organization&amos;s activities, ensuring InnovateUSA remains engaged with the community. Her goal is to spread awareness not only about the American Enterprise System but also business principles.
+                        Rashmi&apos;s dedication is evident in her active involvement in the organization&apos;s activities, ensuring InnovateUSA remains engaged with the community. Her goal is to spread awareness not only about the American Enterprise System but also business principles.
                     </p>
                     <p>
                         This year, Rashmi is determined to attract as much attention as possible, leveraging all her skills to achieve this goal.

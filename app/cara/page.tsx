@@ -18,13 +18,13 @@ const CaraPage: React.FC = () => {
                 />
                 <div className="prose prose-lg max-w-none">
                     <p>
-                        Cara King, a high school senior with a deep passion for journalism, uses her creativity to make a meaningful impact on her community. Whether through large or small initiatives, Cara&amos;s commitment to service shines through.
+                        Cara King, a high school senior with a deep passion for journalism, uses her creativity to make a meaningful impact on her community. Whether through large or small initiatives, Cara&apos;s commitment to service shines through.
                     </p>
                     <p>
-                        As a member of the school&amos;s SCA, she excels in communication and collaboration, fostering strong connections within the InnovateUSA team. Her talent for crafting strategic plans and engaging everyone in their roles strengthens the team&amos;s cohesion.
+                        As a member of the school&apos;s SCA, she excels in communication and collaboration, fostering strong connections within the InnovateUSA team. Her talent for crafting strategic plans and engaging everyone in their roles strengthens the team&apos;s cohesion.
                     </p>
                     <p>
-                        Cara is also devoted to encouraging partnerships with other organizations to promote the significance of the American Enterprise System in today&amos;s world.
+                        Cara is also devoted to encouraging partnerships with other organizations to promote the significance of the American Enterprise System in today&apos;s world.
                     </p>
                 </div>
             </div>

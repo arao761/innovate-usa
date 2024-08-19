@@ -24,7 +24,7 @@ const KatiePage: React.FC = () => {
                         With her natural charisma, Katie excels in competitive events and is committed to leveraging her social media prowess to expand the reach of InnovateUSA beyond her school and local community.
                     </p>
                     <p>
-                        Her dedication to consistent, impactful posting is driving the initiative&amos;s growth and success.
+                        Her dedication to consistent, impactful posting is driving the initiative&apos;s growth and success.
                     </p>
                 </div>
             </div>

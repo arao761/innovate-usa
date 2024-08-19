@@ -18,10 +18,10 @@ const RoshiniPage: React.FC = () => {
                 />
                 <div className="prose prose-lg max-w-none">
                     <p>
-                        Roshini Mantena, a high school senior with a passion for business and computer science, plays a pivotal role in the development and growth of InnovateUSA. Her dedication to the organization is evident through her efforts in organizing and leading workshops that raise awareness about InnovateUSA&amos;s mission.
+                        Roshini Mantena, a high school senior with a passion for business and computer science, plays a pivotal role in the development and growth of InnovateUSA. Her dedication to the organization is evident through her efforts in organizing and leading workshops that raise awareness about InnovateUSA&apos;s mission.
                     </p>
                     <p>
-                        Roshini&amos;s commitment to educating the youth has been instrumental in expanding the campaign&amos;s reach, as she strives to ensure that the younger generation develops a strong understanding of the American Enterprise System.
+                        Roshini&apos;s commitment to educating the youth has been instrumental in expanding the campaign&apos;s reach, as she strives to ensure that the younger generation develops a strong understanding of the American Enterprise System.
                     </p>
                     <p>
                         As InnovateUSA continues to grow, Roshini remains focused on creating impactful educational experiences that inspire and empower future leaders.

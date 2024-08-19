@@ -18,13 +18,13 @@ const RuhiPage: React.FC = () => {
                 />
                 <div className="prose prose-lg max-w-none">
                     <p>
-                        Ruhi Sharma, a high school junior with a growing passion for business and finance, aspires to become a financial advisor. She is currently spearheading fundraisers to support InnovateUSA, leveraging her skills from her involvement in her school&amos;s DECA chapter.
+                        Ruhi Sharma, a high school junior with a growing passion for business and finance, aspires to become a financial advisor. She is currently spearheading fundraisers to support InnovateUSA, leveraging her skills from her involvement in her school&apos;s DECA chapter.
                     </p>
                     <p>
-                        Ruhi is committed to using her financial expertise to identify and execute the most effective fundraising strategies, ensuring each initiative contributes significantly to InnovateUSA&amos;s growth.
+                        Ruhi is committed to using her financial expertise to identify and execute the most effective fundraising strategies, ensuring each initiative contributes significantly to InnovateUSA&apos;s growth.
                     </p>
                     <p>
-                        Her extensive experience enables her to manage all of InnovateUSA&amos;s fundraising efforts, driving the team&amos;s success through well-planned and impactful events.
+                        Her extensive experience enables her to manage all of InnovateUSA&apos;s fundraising efforts, driving the team&apos;s success through well-planned and impactful events.
                     </p>
                 </div>
             </div>
