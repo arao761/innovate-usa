@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const teamMembers = [
     { name: 'Sahasra Jonnalagadda', role: 'Executive Director', imgSrc: 'https://media.licdn.com/dms/image/D4E03AQF8wnLbVprK5A/profile-displayphoto-shrink_400_400/0/1713407413055?e=1729123200&v=beta&t=9hE0GRLmBC7m_6u07f8b5qKfeHZQLihHMgOi0KcsHbw', description: 'Oversees the overall vision, strategy, and execution of InnovateUSA.' },
@@ -40,7 +41,12 @@ const TeamSection: React.FC = () => {
                                 <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 transform translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                                     <h3 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2">{member.name}</h3>
                                     <p className="text-blue-300 font-semibold mb-1 md:mb-2">{member.role}</p>
-                                    <p className="text-gray-200 text-xs md:text-sm hidden md:block">{member.description}</p>
+                                    <p className="text-gray-200 text-xs md:text-sm hidden md:block mb-3">{member.description}</p>
+                                    <Link href={`/${member.name.toLowerCase().split(' ')[0]}`}>
+                                        <a className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                                            Learn More
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </motion.div>
