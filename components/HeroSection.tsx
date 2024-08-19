@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
@@ -13,16 +13,6 @@ const images = [
 
 const HeroSection: React.FC = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => 
-                prevIndex === images.length - 1 ? 0 : prevIndex + 1
-            );
-        }, 5000);
-
-        return () => clearInterval(interval);
-    }, []);
 
     const goToPrevious = (e: React.MouseEvent) => {
         e.stopPropagation();
