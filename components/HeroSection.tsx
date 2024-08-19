@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const images = [
-    '/images/IMG_8962.jpeg'
+    '/31473C17-B77B-49A8-BF3D-50638977AEE9.jpeg'
 ];
 
 const HeroSection: React.FC = () => {
