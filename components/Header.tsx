@@ -27,8 +27,9 @@ const Header: React.FC<HeaderProps> = ({ isMobileMenuOpen, toggleMobileMenu }) =
         setIsDropdownOpen(!isDropdownOpen);
     };
 
-    const scrollToHero = () => {
-        const heroSection = document.getElementById('hero-section');
+    const scrollToHero = (e: React.MouseEvent) => {
+        e.preventDefault();
+        const heroSection = document.querySelector('section');
         if (heroSection) {
             heroSection.scrollIntoView({ behavior: 'smooth' });
         }
