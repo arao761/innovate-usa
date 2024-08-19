@@ -22,7 +22,7 @@ const RoshiniPage: React.FC = () => {
                             </div>
                             <div className="flex-1">
                                 <h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">Roshini Mantena</h1>
-                                <h2 className="text-2xl md:text-3xl text-blue-600 mb-6">Program Manager</h2>
+                                <h2 className="text-2xl md:text-3xl text-blue-600 mb-6">Founder and Program Manager</h2>
                                 <div className="prose prose-lg max-w-none text-gray-600">
                                     <p className="mb-4">
                                     Roshini Mantena, a high school senior with a passion for business and computer science, plays a pivotal role in the development and growth of InnovateUSA. Her dedication to the organization is evident through her efforts in organizing and leading workshops that raise awareness about InnovateUSA&apos;s mission.
