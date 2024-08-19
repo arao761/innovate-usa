@@ -30,6 +30,7 @@ const DeryckPage: React.FC = () => {
                     <p>
                         As Director of Education for his school&apos;s Model UN chapter, Deryck has successfully organized a series of impactful workshops, honing his organizational skills. He is committed to creating a well-structured environment for future events and meticulously planning meetings to ensure the success of the InnovateUSA team.
                     </p>
+                    <br />
                     <p>
                         Additionally, he looks forward to collaborating with Media Specialist Katie Helge to produce a short film or documentary that captures InnovateUSA&apos;s journey and impact.
                     </p>

@@ -30,6 +30,7 @@ const RoshiniPage: React.FC = () => {
                     <p>
                         Roshini&apos;s commitment to educating the youth has been instrumental in expanding the campaign&apos;s reach, as she strives to ensure that the younger generation develops a strong understanding of the American Enterprise System.
                     </p>
+                    <br />
                     <p>
                         As InnovateUSA continues to grow, Roshini remains focused on creating impactful educational experiences that inspire and empower future leaders.
                     </p>

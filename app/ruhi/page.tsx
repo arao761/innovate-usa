@@ -30,6 +30,7 @@ const RuhiPage: React.FC = () => {
                     <p>
                         Ruhi is committed to using her financial expertise to identify and execute the most effective fundraising strategies, ensuring each initiative contributes significantly to InnovateUSA&apos;s growth.
                     </p>
+                    <br />
                     <p>
                         Her extensive experience enables her to manage all of InnovateUSA&apos;s fundraising efforts, driving the team&apos;s success through well-planned and impactful events.
                     </p>

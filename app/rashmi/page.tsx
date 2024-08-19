@@ -30,6 +30,7 @@ const RashmiPage: React.FC = () => {
                     <p>
                         Rashmi&apos;s dedication is evident in her active involvement in the organization&apos;s activities, ensuring InnovateUSA remains engaged with the community. Her goal is to spread awareness not only about the American Enterprise System but also business principles.
                     </p>
+                    <br />
                     <p>
                         This year, Rashmi is determined to attract as much attention as possible, leveraging all her skills to achieve this goal.
                     </p>

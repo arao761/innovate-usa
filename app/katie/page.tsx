@@ -30,6 +30,7 @@ const KatiePage: React.FC = () => {
                     <p>
                         With her natural charisma, Katie excels in competitive events and is committed to leveraging her social media prowess to expand the reach of InnovateUSA beyond her school and local community.
                     </p>
+                    <br />
                     <p>
                         Her dedication to consistent, impactful posting is driving the initiative&apos;s growth and success.
                     </p>

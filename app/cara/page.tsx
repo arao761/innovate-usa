@@ -30,6 +30,7 @@ const CaraPage: React.FC = () => {
                     <p>
                         As a member of the school&apos;s SCA, she excels in communication and collaboration, fostering strong connections within the InnovateUSA team. Her talent for crafting strategic plans and engaging everyone in their roles strengthens the team&apos;s cohesion.
                     </p>
+                    <br />
                     <p>
                         Cara is also devoted to encouraging partnerships with other organizations to promote the significance of the American Enterprise System in today&apos;s world.
                     </p>
