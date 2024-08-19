@@ -16,7 +16,6 @@ const HeroSection: React.FC = () => {
 
     const goToPrevious = (e: React.MouseEvent) => {
         e.stopPropagation();
-        console.log('Previous button clicked');
         setCurrentImageIndex((prevIndex) => 
             prevIndex === 0 ? images.length - 1 : prevIndex - 1
         );
@@ -24,19 +23,24 @@ const HeroSection: React.FC = () => {
 
     const goToNext = (e: React.MouseEvent) => {
         e.stopPropagation();
-        console.log('Next button clicked');
         setCurrentImageIndex((prevIndex) => 
             prevIndex === images.length - 1 ? 0 : prevIndex + 1
         );
     };
 
     return (
-        <section className="relative h-screen overflow-hidden">
+        <section className="relative w-full h-screen overflow-hidden">
             <AnimatePresence initial={false}>
                 <motion.div
                     key={currentImageIndex}
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+                    style={{ 
+                        backgroundImage: `url(${images[currentImageIndex]})`,
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center center',
+                        backgroundColor: 'black'
+                    }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -49,7 +53,7 @@ const HeroSection: React.FC = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="text-4xl md:text-6xl font-bold mb-2 md:mb-4"
+                    className="text-3xl sm:text-4xl md:text-6xl font-bold mb-2 md:mb-4"
                 >
                     InnovateUSA
                 </motion.h1>
@@ -57,24 +61,24 @@ const HeroSection: React.FC = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="text-lg md:text-2xl mb-4 md:mb-6"
+                    className="text-base sm:text-lg md:text-2xl mb-4 md:mb-6"
                 >
                     Empowering students and communities through education, creativity, and enterprise
                 </motion.p>
             </div>
             <button 
                 aria-label="Previous image"
-                className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 md:p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
                 onClick={goToPrevious}
             >
-                <FaChevronLeft size={20} />
+                <FaChevronLeft size={16} />
             </button>
             <button 
                 aria-label="Next image"
-                className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 md:p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 z-20"
                 onClick={goToNext}
             >
-                <FaChevronRight size={20}/>
+                <FaChevronRight size={16}/>
             </button>
         </section>
     );
