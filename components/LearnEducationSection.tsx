@@ -20,7 +20,7 @@ const LearnEducationSection: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-10 sm:mb-16"
                 >
-                    <h2 className="text-4xl sm:text-6xl font-bold text-blue-400 mb-4 sm:mb-8">Learn and Education</h2>
+                    <h2 className="text-4xl sm:text-6xl font-bold text-blue-400 mb-4 sm:mb-8">Learn</h2>
                     <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
                         Explore the fundamentals of the American Enterprise System and its impact on businesses and individuals.
                     </p>

@@ -5,8 +5,8 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import TeamSection from '@/components/TeamSection';
 import ImpactSection from '@/components/ImpactSection';
-import EventsSection from '@/components/EventsSection';
-import CompetitionsSection from '@/components/CompetitionsSection';
+import Competitions from '@/components/Competitions';
+import Workshops from '@/components/Workshops';
 import LearnEducationSection from '@/components/LearnEducationSection';
 import Footer from '@/components/Footer';
 
@@ -24,8 +24,8 @@ const InnovateUSA: React.FC = () => {
             <AboutSection />
             <TeamSection />
             <ImpactSection />
-            <EventsSection />
-            <CompetitionsSection />
+            <Competitions />
+            <Workshops />
             <LearnEducationSection />
             <Footer />
         </div>
