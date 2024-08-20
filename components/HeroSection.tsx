@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Image from 'next/image';
+import logo from '../logo.jpg';
 
 const images = [
-     //put logo of innovateusa here 
+    // eslint-disable-next-line react/jsx-key
+    <Image src={logo} alt="Logo" width={100} height={100} />,
     '/IMG_7961.jpeg',
     '/DSC_0339.jpeg',
 ];
