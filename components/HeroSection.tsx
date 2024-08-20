@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const images = [
-    '/izuum-innovateusa24-igdp.jpg',
+     //put logo of innovateusa here 
     '/IMG_7961.jpeg',
     '/DSC_0339.jpeg',
 ];
