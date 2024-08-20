@@ -13,9 +13,9 @@ const CompetitionsSection: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-10 sm:mb-16"
                 >
-                    <h2 className="text-3xl sm:text-5xl font-bold text-blue-400 mb-4 sm:mb-8">Competitions</h2>
+                    <h2 className="text-3xl sm:text-5xl font-bold text-blue-400 mb-4 sm:mb-8">Workshops</h2>
                     <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
-                        Participate in our exciting competitions to showcase your skills and creativity. Each competition is designed to challenge and inspire you.
+                        Participate in our exciting workshops to showcase your skills and creativity. Each competition is designed to challenge and inspire you.
                     </p>
                 </motion.div>
                 <motion.div
@@ -53,7 +53,7 @@ const CompetitionsSection: React.FC = () => {
             >
                 <Link href="/upcoming-competitions" passHref>
                     <a className="inline-block bg-gray-800 text-blue-400 px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:bg-gray-700 transition-all duration-300 text-base sm:text-xl font-semibold border-2 border-blue-400">
-                        Upcoming Competitions and Events
+                        Upcoming Competitions and Workshops
                     </a>
                 </Link>
             </motion.div>

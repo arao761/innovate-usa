@@ -4,7 +4,7 @@ import { FaRocket, FaLightbulb, FaHandshake } from 'react-icons/fa';
 
 const AboutSection: React.FC = () => {
     const features = [
-        { icon: FaRocket, title: 'Educate', description: 'Provide comprehensive knowledge of the American Enterprise System' },
+        { icon: FaRocket, title: 'Inform', description: 'Provide comprehensive knowledge of the American Enterprise System' },
         { icon: FaLightbulb, title: 'Inspire', description: 'Foster innovative thinking and entrepreneurial spirit' },
         { icon: FaHandshake, title: 'Implement', description: 'Apply business concepts for future success' },
     ];

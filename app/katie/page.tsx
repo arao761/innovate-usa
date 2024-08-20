@@ -22,7 +22,7 @@ const KatiePage: React.FC = () => {
                             </div>
                             <div className="flex-1">
                                 <h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">Katie Helge</h1>
-                                <h2 className="text-2xl md:text-3xl text-blue-600 mb-6">Director of Media</h2>
+                                <h2 className="text-2xl md:text-3xl text-blue-600 mb-6">Media Specialist</h2>
                                 <div className="prose prose-lg max-w-none text-gray-600">
                                     <p className="mb-4">
                                     Katie Helge is a high school junior with a passion for aviation and business. As President of the debate club, she has refined her skills to become a poised and influential leader, determined to make a meaningful impact on her community and school.

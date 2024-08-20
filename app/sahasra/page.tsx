@@ -22,7 +22,7 @@ const SahasraPage: React.FC = () => {
                             </div>
                             <div className="flex-1">
                                 <h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">Sahasra Jonnalagadda</h1>
-                                <h2 className="text-2xl md:text-3xl text-blue-600 mb-6">Founder and Executive Director</h2>
+                                <h2 className="text-2xl md:text-3xl text-blue-600 mb-6">Co-Founder and Executive Director</h2>
                                 <div className="prose prose-lg max-w-none text-gray-600">
                                     <p className="mb-4">
                                     Sahasra Jonnalagadda, a high school senior with a deep passion for politics, economics, and business, founded InnovateUSA after recognizing a gap in business knowledge among her peers. This insight led her to launch an educational campaign focused on promoting the American Enterprise system and fostering a deeper understanding of business principles.
@@ -34,7 +34,7 @@ const SahasraPage: React.FC = () => {
                     <br />
                     
                     <p>
-                        As the Founder and Executive Director of InnovateUSA, she oversees the overall vision, strategy, and execution of the campaign and is responsible for guiding the project&apos;s direction. Sahasra is excited to expand InnovateUSA and work alongside her team to ensure the campaign&apos;s success.
+                        As the Co-Founder and Executive Director of InnovateUSA, she oversees the overall vision, strategy, and execution of the campaign and is responsible for guiding the project&apos;s direction. Sahasra is excited to expand InnovateUSA and work alongside her team to ensure the campaign&apos;s success.
                     </p>
                                 </div>
                             </div>

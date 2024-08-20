@@ -12,13 +12,13 @@ const EventsSection: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-10 sm:mb-16"
                 >
-                    <h2 className="text-3xl sm:text-5xl font-bold text-blue-400 mb-4 sm:mb-8">Upcoming Events</h2>
+                    <h2 className="text-3xl sm:text-5xl font-bold text-blue-400 mb-4 sm:mb-8">Competitions</h2>
                     <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
-                        Join us for our upcoming events to stay connected, learn, and grow. Each event is an opportunity to engage with industry experts and fellow innovators.
+                        Join us for our competitions to stay connected, learn, and grow. Each competition is an opportunity to engage with industry experts and fellow innovators.
                     </p>
                 </motion.div>
                 <motion.div
-                    className="max-w-3xl mx-auto"
+                    className="max-w-3xl mx-auto"   
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -35,7 +35,7 @@ const EventsSection: React.FC = () => {
                             </span>
                         </div>
                         <p className="text-gray-300 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed">
-                            Our team brought awareness to the American Enterprise System by organizing an art competition for local Elementary and Middle schools. The competition encouraged creativity and business skills among students, who were tasked with designing a lemonade stand business.
+                            Our team brought awareness to the American Enterprise System by organizing an art competition for local Elementary and Middle schools. The competition encouraged creativity and business skills among students, who were tasked with designing a lemonade stand business. At the end of the competition, we had 40+ submissions!!
                         </p>
                         <div className="bg-blue-900/30 p-4 rounded-lg mb-6 sm:mb-8">
                             <p className="text-blue-300 font-semibold text-sm sm:text-base">

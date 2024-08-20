@@ -22,7 +22,7 @@ const CaraPage: React.FC = () => {
                             </div>
                             <div className="flex-1">
                                 <h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">Cara King</h1>
-                                <h2 className="text-2xl md:text-3xl text-blue-600 mb-6">Director of Public Affairs</h2>
+                                <h2 className="text-2xl md:text-3xl text-blue-600 mb-6">Outreach Coordinator</h2>
                                 <div className="prose prose-lg max-w-none text-gray-600">
                                     <p className="mb-4">
                                     Cara King, a high school senior with a deep passion for journalism, uses her creativity to make a meaningful impact on her community. Whether through large or small initiatives, Cara&apos;s commitment to service shines through.
