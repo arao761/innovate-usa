@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ isMobileMenuOpen, toggleMobileMenu }) =
                 </h1>
                 <nav className="hidden lg:flex">
                     <ul className="flex space-x-6">
-                        {['About', 'Team', 'Events', 'Competitions', 'Learn & Educate'].map((item) => (
+                        {['About', 'Team', 'Events', 'Competitions', 'Learn'].map((item) => (
                             <li key={item}>
                                 <a 
                                     href={`#${item.toLowerCase().replace(' & ', '-')}`} 
