@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const CompetitionsSection: React.FC = () => {
     return (
-        <section id="competitions" className="py-12 sm:py-20 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900">
+        <section id="workshops" className="py-12 sm:py-20 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900">
             <div className="container mx-auto px-4 sm:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

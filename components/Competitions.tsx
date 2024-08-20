@@ -4,7 +4,7 @@ import { FaPaintBrush, FaCalendarAlt } from 'react-icons/fa';
 
 const EventsSection: React.FC = () => {
     return (
-        <section id="events" className="py-12 sm:py-20 bg-gradient-to-b from-gray-900 to-blue-900">
+        <section id="competitions" className="py-12 sm:py-20 bg-gradient-to-b from-gray-900 to-blue-900">
             <div className="container mx-auto px-4 sm:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
