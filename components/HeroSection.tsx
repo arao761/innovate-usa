@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import Image from 'next/image';
-import logo from '../logo.jpg';
 
 const images = [
-    // eslint-disable-next-line react/jsx-key
-    <Image src={logo} alt="Logo" width={500} height={500} />,
+    '/logo.jpg',
     '/IMG_7961.jpeg',
     '/DSC_0339.jpeg',
 ];
