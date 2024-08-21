@@ -13,7 +13,7 @@ const UpcomingCompetitionsButton: React.FC = () => {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="text-center"
                 >
-                    <h2 className="text-3xl sm:text-5xl font-extrabold text-white mb-4 sm:mb-8">
+                    <h2 className="text-3xl sm:text-5xl font-extrabold text-blue-400 mb-4 sm:mb-8">
                         Upcoming Events
                     </h2>
                     <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-8 sm:mb-12">
