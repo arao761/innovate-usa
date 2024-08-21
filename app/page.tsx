@@ -9,6 +9,7 @@ import Competitions from '@/components/Competitions';
 import Workshops from '@/components/Workshops';
 import LearnEducationSection from '@/components/LearnEducationSection';
 import Footer from '@/components/Footer';
+import UpcomingCompetitions from '@/components/UpcomingCompetitions';
 
 const InnovateUSA: React.FC = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,6 +27,7 @@ const InnovateUSA: React.FC = () => {
             <ImpactSection />
             <Competitions />
             <Workshops />
+            <UpcomingCompetitions />
             <LearnEducationSection />
             <Footer />
         </div>

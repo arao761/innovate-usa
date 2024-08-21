@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLightbulb, FaChalkboardTeacher, FaArrowRight } from 'react-icons/fa';
-import Link from 'next/link';
+import { FaLightbulb, FaChalkboardTeacher } from 'react-icons/fa';
 
 const CompetitionsSection: React.FC = () => {
     return (
@@ -45,18 +44,6 @@ const CompetitionsSection: React.FC = () => {
                     </div>
                 </motion.div>
             </div>
-            <motion.div 
-                className="text-center mt-10 sm:mt-16"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-            >
-                <Link href="/upcoming-competitions" passHref>
-                    <a className="inline-block bg-gray-800 text-blue-400 px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:bg-gray-700 transition-all duration-300 text-base sm:text-xl font-semibold border-2 border-blue-400">
-                        Upcoming Competitions and Workshops
-                    </a>
-                </Link>
-            </motion.div>
         </section>
     );
 };

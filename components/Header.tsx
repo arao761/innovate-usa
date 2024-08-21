@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ isMobileMenuOpen, toggleMobileMenu }) =
                 </h1>
                 <nav className="hidden lg:flex">
                     <ul className="flex space-x-6">
-                        {['About', 'Team', 'Competitions', 'Workshops', 'Learn'].map((item) => (
+                        {['About', 'Team', 'Competitions', 'Workshops', 'Upcoming Competitions', 'Learn'].map((item) => (
                             <li key={item}>
                                 <a 
                                     href={`#${item.toLowerCase().replace(' & ', '-')}`} 
@@ -72,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ isMobileMenuOpen, toggleMobileMenu }) =
                     {isDropdownOpen && (
                         <nav className="absolute right-0 mt-2 w-48 bg-blue-800 rounded-md shadow-lg py-1 z-10">
                             <ul className="flex flex-col">
-                                {['About', 'Team', 'Competitions', 'Workshops', 'Learn'].map((item) => (
+                                {['About', 'Team', 'Competitions', 'Workshops', 'Upcoming Competitions', 'Learn'].map((item) => (
                                     <li key={item}>
                                         <a 
                                             href={`#${item.toLowerCase().replace(' & ', '-')}`} 
