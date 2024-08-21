@@ -10,6 +10,7 @@ import Workshops from '@/components/Workshops';
 import LearnEducationSection from '@/components/LearnEducationSection';
 import Footer from '@/components/Footer';
 import UpcomingCompetitions from '@/components/UpcomingCompetitions';
+import { Analytics } from "@vercel/analytics/react"
 
 const InnovateUSA: React.FC = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,6 +31,7 @@ const InnovateUSA: React.FC = () => {
             <UpcomingCompetitions />
             <LearnEducationSection />
             <Footer />
+            <Analytics />
         </div>
     );
 };
