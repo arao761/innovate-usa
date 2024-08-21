@@ -15,7 +15,7 @@ const RashmiPage: React.FC = () => {
                             <div className="relative">
                                 <div className="absolute inset-0 bg-blue-500 rounded-full opacity-10 blur-xl"></div>
                                 <img 
-                                    src="/image8.jpg" 
+                                    src="/image8.JPG" 
                                     alt="Rashmi Mantena" 
                                     className="relative w-64 h-64 object-cover rounded-full shadow-xl border-4 border-white"
                                 />
