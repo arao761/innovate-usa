@@ -10,7 +10,7 @@ const AnkitPage: React.FC = () => {
             </Head>
             <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-900">
                 <div className="container mx-auto px-4 py-16">
-                    <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+                    <div className="bg-gray-600 rounded-3xl shadow-2xl p-8 md:p-12">
                         <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
                             <div className="relative">
                                 <div className="absolute inset-0 bg-blue-500 rounded-full opacity-10 blur-xl"></div>
