@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const UpcomingCompetitionsButton: React.FC = () => {
     return (
-        <section id="upcoming-events" className="bg-gradient-to-b from-blue-800 to-blue-900 py-12 sm:py-20">
+        <section id="upcoming-events" className="py-12 sm:py-20 bg-gradient-to-b from-gray-900 to-blue-900">
             <div className="container mx-auto px-4 sm:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -17,7 +17,7 @@ const UpcomingCompetitionsButton: React.FC = () => {
                         Upcoming Events
                     </h2>
                     <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-8 sm:mb-12">
-                        Stay up-to-date with our latest competitions and workshops. Click the button below to learn more.
+                        Stay up-to-date with our upcoming competitions and workshops. Click the button below to learn more.
                     </p>
                     <Link href="/upcoming-competitions" passHref>
                         <motion.a 
