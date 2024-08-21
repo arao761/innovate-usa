@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const UpcomingCompetitionsButton: React.FC = () => {
     return (
-        <section id='upcoming-events' className="bg-gradient-to-r from-gray-1000- via-blue-1000 to-gray-1000 py-12 sm:py-20">
+        <section id='upcoming-events' className="bg-gradient-to-b from-gray-900 to-blue-900 py-12 sm:py-20">
             <div className="container mx-auto px-4 sm:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
