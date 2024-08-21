@@ -8,7 +8,7 @@ const AnkitPage: React.FC = () => {
                 <title>Ankit Rao - InnovateUSA</title>
                 <meta name="description" content="Ankit Rao, Webmaster of InnovateUSA" />
             </Head>
-            <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200">
+            <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-900">
                 <div className="container mx-auto px-4 py-16">
                     <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
                         <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
