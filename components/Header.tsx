@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = ({ isMobileMenuOpen, toggleMobileMenu }) =
                         {['About', 'Team', 'Competitions', 'Workshops', 'Upcoming Events', 'Learn'].map((item) => (
                             <li key={item}>
                                 <a 
-                                    href={`#${item.toLowerCase().replace(' & ', '-')}`} 
+                                    href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} 
                                     className="hover:text-blue-400 transition-colors"
                                     style={{ fontSize: '16px' }}
                                 >
@@ -75,7 +75,7 @@ const Header: React.FC<HeaderProps> = ({ isMobileMenuOpen, toggleMobileMenu }) =
                                 {['About', 'Team', 'Competitions', 'Workshops', 'Upcoming Events', 'Learn'].map((item) => (
                                     <li key={item}>
                                         <a 
-                                            href={`#${item.toLowerCase().replace(' & ', '-')}`} 
+                                            href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} 
                                             className="block px-4 py-2 hover:bg-blue-700 transition-colors"
                                             style={{ fontSize: '14px' }}
                                         >
