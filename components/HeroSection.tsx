@@ -42,22 +42,6 @@ const HeroSection: React.FC = () => {
             </AnimatePresence>
             <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 md:px-6">
-                <motion.h1
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                    className="text-4xl md:text-6xl font-bold mb-2 md:mb-4"
-                >
-                    InnovateUSA
-                </motion.h1>
-                <motion.p
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.3 }}
-                    className="text-lg md:text-2xl mb-4 md:mb-6"
-                >
-                    Empowering students and communities through education, creativity, and enterprise
-                </motion.p>
             </div>
             <button 
                 aria-label="Previous image"
