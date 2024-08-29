@@ -6,12 +6,12 @@ const UpcomingCompetitions: React.FC = () => {
         {
             title: "Entrepreneurship 101 for Middle Schoolers",
             description: "A workshop designed to introduce middle school students to the basics of entrepreneurship and business thinking.",
-            date: "Coming Soon"
+            date: "August 30th, 2024"
         },
         {
             title: "Shark Tank-style Pitch Competition",
             description: "An exciting pitch competition for middle and high school students to present their innovative ideas to a panel of judges.",
-            date: "Coming Soon"
+            date: "September 1st, 2024"
         }
     ];
 
@@ -29,9 +29,6 @@ const UpcomingCompetitions: React.FC = () => {
                     </div>
                 ))}
             </div>
-            <p className="text-lg md:text-xl text-gray-300 mt-8 mb-12 text-center">
-                Stay tuned for more details and registration information!
-            </p>
             <Link href="/" passHref>
                 <a className="bg-gray-800 text-blue-400 px-6 py-3 rounded-full shadow-lg hover:bg-gray-700 transition-all duration-300 text-lg font-semibold border-2 border-blue-400">
                     Back to Home
