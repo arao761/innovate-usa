@@ -6,7 +6,7 @@ const impactItems = [
     { icon: FaChalkboardTeacher, title: 'Education and Awareness', description: '150+ students participated in workshops and presentations, fostering an understanding of the American Enterprise System.' },
     { icon: FaUsers, title: 'Community Engagement', description: 'Hosted five high-impact competitions aimed at advancing American entrepreneurial literacy and fostering innovation in enterprise education.' },
     { icon: FaPiggyBank, title: 'Financial Literacy', description: 'The mini-market activity within a workshop allowed students to understand how businesses work and what goes into making products for customers to buy.' },
-    { icon: FaHandshake, title: 'Networking and Collaboration', description: 'Partnering with 3 businesses: Ridge Designs, SR Coffee Shop, and ' },
+    { icon: FaHandshake, title: 'Networking and Collaboration', description: 'Partnering with 3 businesses: Ridge Designs, SR Coffee Shop, and Dulles Gymnastics Academy' },
     { icon: FaChartLine, title: 'Participation', description: 'Our social media platforms gained 120 followers, and active participation in workshops remained high, reflecting strong student engagement with the American Enterprise System.' },
     { icon: FaBullseye, title: 'Main Goal', description: 'InnovateUSA aimed to leave a lasting imprint on its community and students, promoting the values of the American Enterprise System through social media and workshops.' },
 ];
