@@ -26,7 +26,6 @@ const InnovateUSA: React.FC = () => {
             <AboutSection />
             <TeamSection />
             <ImpactSection />
-            <Competitions />
             <Workshops />
             <UpcomingCompetitions />
             <LearnEducationSection />
