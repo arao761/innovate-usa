@@ -14,7 +14,7 @@ const UpcomingEvent: React.FC = () => {
     return (
         <div className="min-h-screen bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 flex flex-col items-center justify-center px-4 py-12">
             <h1 className="text-4xl md:text-6xl font-bold text-blue-400 mb-8 text-center">
-                Upcoming Event
+                Upcoming Events
             </h1>
             <div className="w-full max-w-4xl">
                 <div className="bg-gray-800 rounded-lg p-8 border-2 border-blue-400 shadow-lg">
