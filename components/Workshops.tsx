@@ -45,8 +45,7 @@ const CompetitionsSection: React.FC = () => {
                 >
                     <h2 className="text-3xl sm:text-5xl font-bold text-blue-400 mb-4 sm:mb-8">Competitions and Workshops</h2>
                     <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
-                        Participate in our exciting competitions and workshops to showcase your skills and creativity. Each event is designed to challenge and inspire you.
-                    </p>
+                    Explore our past competitions and workshops that showcased skills and creativity. Each event was designed to challenge and inspire participants, fostering innovation and entrepreneurial spirit.                    </p>
                 </motion.div>
                 <motion.div
                     className="max-w-4xl mx-auto space-y-8"
