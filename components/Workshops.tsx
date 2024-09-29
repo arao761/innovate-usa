@@ -80,11 +80,7 @@ const CompetitionsSection: React.FC = () => {
                     ))}
                 </motion.div>
                 <div className="text-center mt-10">
-                    <Link href="/" passHref>
-                        <a className="bg-gray-800 text-blue-400 px-6 py-3 rounded-full shadow-lg hover:bg-gray-700 transition-all duration-300 text-lg font-semibold border-2 border-blue-400">
-                            Back to Home
-                        </a>
-                    </Link>
+
                 </div>
             </div>
         </section>
