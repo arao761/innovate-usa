@@ -12,7 +12,7 @@ const CompetitionsSection: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-10 sm:mb-16"
                 >
-                    <h2 className="text-3xl sm:text-5xl font-bold text-blue-400 mb-4 sm:mb-8">Workshops</h2>
+                    <h2 className="text-3xl sm:text-5xl font-bold text-blue-400 mb-4 sm:mb-8">Past Workshops</h2>
                     <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
                         Participate in our exciting workshops to showcase your skills and creativity. Each competition is designed to challenge and inspire you.
                     </p>

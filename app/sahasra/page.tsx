@@ -15,7 +15,7 @@ const SahasraPage: React.FC = () => {
                             <div className="relative">
                                 <div className="absolute inset-0 bg-blue-500 rounded-full opacity-10 blur-xl"></div>
                                 <img 
-                                    src="https://media.licdn.com/dms/image/D4E03AQF8wnLbVprK5A/profile-displayphoto-shrink_400_400/0/1713407413055?e=1729123200&v=beta&t=9hE0GRLmBC7m_6u07f8b5qKfeHZQLihHMgOi0KcsHbw" 
+                                    src="/image1.jpg" 
                                     alt="Sahasra Jonnalagadda" 
                                     className="relative w-64 h-64 object-cover rounded-full shadow-xl border-4 border-white"
                                 />
