@@ -7,7 +7,7 @@ const UpcomingEvent: React.FC = () => {
         description: "Join us for an exciting workshop led by Deryck and Ruhi, focusing on small business strategies and entrepreneurship fundamentals. This event is designed to inspire and educate aspiring entrepreneurs with practical insights and hands-on activities.",
         date: "October 4th, 2024",
         time: "11:00 AM - 12:30 PM",
-        location: "Ridge Community Center",
+        location: "Ashburn Library",
         leaders: "Deryck and Ruhi"
     };
 
