@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaTrophy, FaCalendarAlt, FaLightbulb } from 'react-icons/fa';
-import Link from 'next/link';
 
 const CompetitionsSection: React.FC = () => {
     const events = [
@@ -80,7 +79,7 @@ const CompetitionsSection: React.FC = () => {
                     </p>
                 </motion.div>
                 <motion.div
-                    className="max-w-4xl mx-auto space-y-8"
+                    className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -88,35 +87,34 @@ const CompetitionsSection: React.FC = () => {
                     {events.map((event, index) => (
                         <div
                             key={index}
-                            className="bg-gray-800 p-6 sm:p-10 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20"
+                            className="bg-gray-800 p-6 sm:p-8 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20"
                         >
-                            <div className="flex flex-col sm:flex-row items-center sm:items-start mb-4 sm:mb-6">
-                                <FaTrophy className="text-3xl sm:text-4xl text-yellow-400 mb-2 sm:mb-0 sm:mr-4" />
+                            <div className="flex items-center mb-4">
+                                <FaTrophy className="text-3xl text-yellow-400 mr-3" />
                                 <div>
-                                    <h3 className="text-2xl sm:text-3xl font-bold text-blue-400 text-center sm:text-left mb-2">
+                                    <h3 className="text-xl font-bold text-blue-400 mb-1">
                                         {event.title}
                                     </h3>
-                                    <span className="text-gray-400 flex items-center justify-center sm:justify-start text-sm sm:text-base">
-                                        <FaCalendarAlt className="mr-2" />
+                                    <span className="text-gray-400 flex items-center text-sm">
+                                        <FaCalendarAlt className="mr-1" />
                                         {event.date}
                                     </span>
                                 </div>
                             </div>
-                            <p className="text-gray-300 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed">
+                            <p className="text-gray-300 mb-4 text-sm leading-relaxed">
                                 {event.description}
                             </p>
-                            <ul className="list-none space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+                            <ul className="list-none space-y-2">
                                 {event.highlights.map((highlight, hIndex) => (
                                     <li key={hIndex} className="flex items-start">
-                                        <FaLightbulb className="text-yellow-400 mt-1 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-300 text-sm sm:text-base">{highlight}</span>
+                                        <FaLightbulb className="text-yellow-400 mt-1 mr-2 flex-shrink-0" />
+                                        <span className="text-gray-300 text-sm">{highlight}</span>
                                     </li>
                                 ))}
                             </ul>
                         </div>
                     ))}
                 </motion.div>
-                <div className="text-center mt-10"></div>
             </div>
         </section>
     );
