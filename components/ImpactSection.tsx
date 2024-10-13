@@ -1,14 +1,62 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaChalkboardTeacher, FaUsers, FaPiggyBank, FaHandshake, FaChartLine, FaBullseye, FaGlobe } from 'react-icons/fa';
+import { FaChalkboardTeacher, FaUsers, FaPiggyBank, FaHandshake, FaChartLine, FaBullseye } from 'react-icons/fa';
 
 const impactItems = [
-    { icon: FaChalkboardTeacher, title: 'Education and Awareness', description: '300+ students participated in workshops and presentations, fostering an understanding of the American Enterprise System.' },
-    { icon: FaUsers, title: 'Community Engagement', description: 'Hosted five high-impact competitions aimed at advancing American entrepreneurial literacy and fostering innovation in enterprise education.' },
-    { icon: FaPiggyBank, title: 'Financial Literacy', description: 'The mini-market activity within a workshop allowed students to understand how businesses work and what goes into making products for customers to buy.' },
-    { icon: FaHandshake, title: 'Networking and Collaboration', description: 'Partnering with 3 businesses: Ridge Designs, SR Coffee Shop, and Dulles Gymnastics Academy.' },
-    { icon: FaChartLine, title: 'Participation', description: 'Our social media platforms gained 120 followers, and our active participation in workshops remained high, impacting over 13 thousand students.' },
-    { icon: FaBullseye, title: 'Main Goal', description: 'InnovateUSA aimed to leave a lasting imprint on its community and students, promoting the values of the American Enterprise System through social media and workshops.' },
+    { 
+        icon: FaChalkboardTeacher, 
+        title: 'Education and Awareness', 
+        description: (
+            <>
+                <strong>300+ students</strong> participated in workshops and presentations, fostering an understanding of the American Enterprise System.
+            </>
+        ) 
+    },
+    { 
+        icon: FaUsers, 
+        title: 'Community Engagement', 
+        description: (
+            <>
+                Hosted <strong>five high-impact competitions</strong> aimed at advancing American entrepreneurial literacy and fostering innovation in enterprise education.
+            </>
+        ) 
+    },
+    { 
+        icon: FaPiggyBank, 
+        title: 'Financial Literacy', 
+        description: (
+            <>
+                The <strong>mini-market activity</strong> within a workshop allowed students to understand how businesses work and what goes into making products for customers to buy.
+            </>
+        ) 
+    },
+    { 
+        icon: FaHandshake, 
+        title: 'Networking and Collaboration', 
+        description: (
+            <>
+                Partnered with <strong>3 businesses</strong>: Ridge Designs, SR Coffee Shop, and Dulles Gymnastics Academy.
+            </>
+        ) 
+    },
+    { 
+        icon: FaChartLine, 
+        title: 'Participation', 
+        description: (
+            <>
+                Our social media platforms gained <strong>120 followers</strong>, and our active participation in workshops remained high, impacting over <strong>13,000 students</strong>.
+            </>
+        ) 
+    },
+    { 
+        icon: FaBullseye, 
+        title: 'Main Goal', 
+        description: (
+            <>
+                InnovateUSA aimed to leave a lasting imprint on its community and students, promoting the values of the <strong>American Enterprise System</strong> through social media and workshops.
+            </>
+        ) 
+    },
 ];
 
 const ImpactSection: React.FC = () => {
@@ -39,8 +87,12 @@ const ImpactSection: React.FC = () => {
                                 <div className="w-16 h-16 md:w-20 md:h-20 bg-blue-500 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                                     <impact.icon size={32} className="text-white" />
                                 </div>
-                                <h3 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4 text-white group-hover:text-blue-400 transition-colors duration-300">{impact.title}</h3>
-                                <p className="text-sm md:text-base text-gray-300 group-hover:text-gray-200 transition-colors duration-300">{impact.description}</p>
+                                <h3 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4 text-white group-hover:text-blue-400 transition-colors duration-300">
+                                    {impact.title}
+                                </h3>
+                                <p className="text-sm md:text-base text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
+                                    {impact.description}
+                                </p>
                             </div>
                         </motion.div>
                     ))}
