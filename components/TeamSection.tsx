@@ -6,7 +6,7 @@ const teamMembers = [
     { name: 'Sahasra Jonnalagadda', role: 'Co-Founder and Executive Director', imgSrc: '/image1.jpg', description: 'Oversees the overall vision, strategy, and execution of InnovateUSA.' },
     { name: 'Roshini Mantena', role: 'Co-Founder and Program Manager', imgSrc: '/image4.jpg', description: 'Manages day-to-day operations, coordinates team efforts.' },
     { name: 'Rashmi Mantena', role: 'Co-Founder and Partnership Director', imgSrc: '/image8.JPG', description: 'Focuses on building strategic partnerships.' },
-    { name: 'Ruhi Sharma', role: 'Treasurer', imgSrc: 'https://media.licdn.com/dms/image/v2/D4D03AQFGpuBXLPUpDA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723264568304?e=1729123200&v=beta&t=FMXTh2dRof4NZSkln9yB0VewhIAQUq8T_eZoXrDBXeg', description: 'Manages the organization finances and budgeting.' },
+    { name: 'Ruhi Sharma', role: 'Treasurer', imgSrc: 'https://media.licdn.com/dms/image/v2/D4D03AQFGpuBXLPUpDA/profile-displayphoto-shrink_800_800/0/1723264568304?e=1729123200&v=beta&t=FMXTh2dRof4NZSkln9yB0VewhIAQUq8T_eZoXrDBXeg', description: 'Manages the organization finances and budgeting.' },
     { name: 'Ankit Rao', role: 'Webmaster', imgSrc: 'https://media.licdn.com/dms/image/D4E03AQEtwmPBQtNGWA/profile-displayphoto-shrink_400_400/0/1711079713525?e=1729123200&v=beta&t=5B2hPSCos-jhaAeqckqteO6pYUznoP0i-wrhi7QdRrw', description: 'Oversees the design, development, and maintenance of the website.' },
     { name: 'Cara King', role: 'Outreach Coordinator', imgSrc: '/image6.jpg', description: 'Leads public relations efforts and manages media outreach.' },
     { name: 'Deryck Toney', role: 'Secretary', imgSrc: '/image7.jpg', description: 'Handles administrative tasks and keeps track of meetings.' },
@@ -30,22 +30,25 @@ const TeamSection: React.FC = () => {
                     {teamMembers.map((member, index) => (
                         <motion.div
                             key={index}
-                            className="relative group h-80 w-full"
+                            className="relative group h-80 w-full overflow-hidden rounded-lg shadow-lg"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1, duration: 0.6 }}
                         >
-                            <div
-                                className="absolute inset-0 bg-cover bg-center rounded-lg shadow-lg overflow-hidden group-hover:shadow-xl transition-all duration-300"
-                                style={{ backgroundImage: `url(${member.imgSrc})` }}
-                            >
-                                <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300"></div>
-                                <div className="absolute bottom-0 left-0 right-0 p-4 text-center text-white">
-                                    <h3 className="text-xl font-bold">{member.name}</h3>
-                                    <p className="text-sm font-semibold">{member.role}</p>
-                                    <p className="text-sm mt-2 hidden md:block">{member.description}</p>
+                            <img
+                                src={member.imgSrc}
+                                alt={`Portrait of ${member.name}`}
+                                className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent p-4">
+                                <h3 className="text-lg font-bold text-white">{member.name}</h3>
+                                <p className="text-sm font-semibold text-blue-300">{member.role}</p>
+                            </div>
+                            <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div className="text-center px-4">
+                                    <p className="text-sm text-white mb-4 hidden md:block">{member.description}</p>
                                     <Link href={`/${member.name.toLowerCase().split(' ')[0]}`}>
-                                        <a className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                        <a className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
                                             Learn More
                                         </a>
                                     </Link>
