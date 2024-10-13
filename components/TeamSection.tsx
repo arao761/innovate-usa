@@ -26,44 +26,34 @@ const TeamSection: React.FC = () => {
                     <h2 className="text-3xl md:text-5xl font-bold text-blue-500 mb-2 md:mb-4">Our Innovative Team</h2>
                     <p className="text-base md:text-lg text-gray-300">Meet the minds behind InnovateUSA</p>
                 </motion.div>
-                <motion.div
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                >
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {teamMembers.map((member, index) => (
                         <motion.div
                             key={index}
-                            className="bg-gray-800 p-6 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300"
+                            className="relative group h-80 w-full"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1, duration: 0.6 }}
                         >
-                            <div className="flex flex-col items-center text-center">
-                                <img
-                                    src={member.imgSrc}
-                                    alt={`Portrait of ${member.name}`}
-                                    className="w-32 h-32 object-cover object-center rounded-full mb-4"
-                                />
-                                <h3 className="text-xl font-bold text-blue-400 mb-1">
-                                    {member.name}
-                                </h3>
-                                <p className="text-blue-300 font-semibold mb-2">
-                                    {member.role}
-                                </p>
-                                <p className="text-gray-300 text-sm mb-4">
-                                    {member.description}
-                                </p>
-                                <Link href={`/${member.name.toLowerCase().split(' ')[0]}`}>
-                                    <a className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-                                        Learn More
-                                    </a>
-                                </Link>
+                            <div
+                                className="absolute inset-0 bg-cover bg-center rounded-lg shadow-lg overflow-hidden group-hover:shadow-xl transition-all duration-300"
+                                style={{ backgroundImage: `url(${member.imgSrc})` }}
+                            >
+                                <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300"></div>
+                                <div className="absolute bottom-0 left-0 right-0 p-4 text-center text-white">
+                                    <h3 className="text-xl font-bold">{member.name}</h3>
+                                    <p className="text-sm font-semibold">{member.role}</p>
+                                    <p className="text-sm mt-2 hidden md:block">{member.description}</p>
+                                    <Link href={`/${member.name.toLowerCase().split(' ')[0]}`}>
+                                        <a className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                            Learn More
+                                        </a>
+                                    </Link>
+                                </div>
                             </div>
                         </motion.div>
                     ))}
-                </motion.div>
+                </div>
             </div>
         </section>
     );
