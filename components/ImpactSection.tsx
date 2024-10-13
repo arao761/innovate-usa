@@ -8,7 +8,7 @@ const impactItems = [
         title: 'Education and Awareness', 
         description: (
             <>
-                <strong>300+ students</strong> participated in workshops and presentations, fostering an understanding of the American Enterprise System.
+                <strong className="text-black">300+ students</strong> participated in workshops and presentations, fostering an understanding of the American Enterprise System.
             </>
         ) 
     },
@@ -17,7 +17,7 @@ const impactItems = [
         title: 'Community Engagement', 
         description: (
             <>
-                Hosted <strong>five high-impact competitions</strong> aimed at advancing American entrepreneurial literacy and fostering innovation in enterprise education.
+                Hosted <strong className="text-black">five high-impact competitions</strong> aimed at advancing American entrepreneurial literacy and fostering innovation in enterprise education.
             </>
         ) 
     },
@@ -26,7 +26,7 @@ const impactItems = [
         title: 'Financial Literacy', 
         description: (
             <>
-                The <strong>mini-market activity</strong> within a workshop allowed students to understand how businesses work and what goes into making products for customers to buy.
+                The <strong className="text-black">mini-market activity</strong> within a workshop allowed students to understand how businesses work and what goes into making products for customers to buy.
             </>
         ) 
     },
@@ -35,7 +35,7 @@ const impactItems = [
         title: 'Networking and Collaboration', 
         description: (
             <>
-                Partnered with <strong>3 businesses</strong>: Ridge Designs, SR Coffee Shop, and Dulles Gymnastics Academy.
+                Partnered with <strong className="text-black">3 businesses</strong>: Ridge Designs, SR Coffee Shop, and Dulles Gymnastics Academy.
             </>
         ) 
     },
@@ -44,7 +44,7 @@ const impactItems = [
         title: 'Participation', 
         description: (
             <>
-                Our social media platforms gained <strong>120 followers</strong>, and our active participation in workshops remained high, impacting over <strong>13,000 students</strong>.
+                Our social media platforms gained <strong className="text-black">120 followers</strong>, and our active participation in workshops remained high, impacting over <strong className="text-black">13,000 students</strong>.
             </>
         ) 
     },
@@ -53,7 +53,7 @@ const impactItems = [
         title: 'Main Goal', 
         description: (
             <>
-                InnovateUSA aimed to leave a lasting imprint on its community and students, promoting the values of the <strong>American Enterprise System</strong> through social media and workshops.
+                InnovateUSA aimed to leave a lasting imprint on its community and students, promoting the values of the <strong className="text-black">American Enterprise System</strong> through social media and workshops.
             </>
         ) 
     },
