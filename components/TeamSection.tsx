@@ -23,35 +23,47 @@ const TeamSection: React.FC = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-10 md:mb-16"
                 >
-                    <h2 className="text-4xl md:text-6xl font-bold text-blue-500 mb-2 md:mb-4">Our Innovative Team</h2>
-                    <p className="text-lg md:text-xl text-gray-300">Meet the minds behind InnovateUSA</p>
+                    <h2 className="text-3xl md:text-5xl font-bold text-blue-500 mb-2 md:mb-4">Our Innovative Team</h2>
+                    <p className="text-base md:text-lg text-gray-300">Meet the minds behind InnovateUSA</p>
                 </motion.div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+                <motion.div
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                >
                     {teamMembers.map((member, index) => (
                         <motion.div
                             key={index}
-                            className="relative group"
-                            initial={{ opacity: 0, y: 50 }}
+                            className="bg-gray-800 p-6 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300"
+                            initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1, duration: 0.6 }}
                         >
-                            <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-105">
-                                <img src={member.imgSrc} alt={`Portrait of ${member.name}`} className="w-full h-64 md:h-80 object-cover object-center" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 transform translate-y-0 md:translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                                    <h3 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2">{member.name}</h3>
-                                    <p className="text-blue-300 font-semibold mb-1 md:mb-2">{member.role}</p>
-                                    <p className="text-gray-200 text-xs md:text-sm hidden md:block mb-3">{member.description}</p>
-                                    <Link href={`/${member.name.toLowerCase().split(' ')[0]}`}>
-                                        <a className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
-                                            Learn More
-                                        </a>
-                                    </Link>
-                                </div>
+                            <div className="flex flex-col items-center text-center">
+                                <img
+                                    src={member.imgSrc}
+                                    alt={`Portrait of ${member.name}`}
+                                    className="w-32 h-32 object-cover object-center rounded-full mb-4"
+                                />
+                                <h3 className="text-xl font-bold text-blue-400 mb-1">
+                                    {member.name}
+                                </h3>
+                                <p className="text-blue-300 font-semibold mb-2">
+                                    {member.role}
+                                </p>
+                                <p className="text-gray-300 text-sm mb-4">
+                                    {member.description}
+                                </p>
+                                <Link href={`/${member.name.toLowerCase().split(' ')[0]}`}>
+                                    <a className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                        Learn More
+                                    </a>
+                                </Link>
                             </div>
                         </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );
