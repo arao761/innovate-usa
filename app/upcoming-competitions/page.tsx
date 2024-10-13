@@ -8,7 +8,7 @@ const UpcomingEvent: React.FC = () => {
         date: "October 4th, 2024",
         time: "11:00 AM - 12:30 PM",
         location: "Ashburn Library",
-        leaders: "Deryck and Ruhi"
+        leaders: "Cara and Ruhi"
     };
 
     return (

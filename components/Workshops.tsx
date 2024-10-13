@@ -6,6 +6,45 @@ import Link from 'next/link';
 const CompetitionsSection: React.FC = () => {
     const events = [
         {
+            title: "Art Competition",
+            description: "Our team brought awareness to the American Enterprise System by organizing an art competition for local Elementary and Middle schools. The competition encouraged creativity and business skills among students, who were tasked with designing a lemonade stand business.",
+            date: "Fall 2023",
+            highlights: [
+                "40+ submissions received",
+                "Winners awarded $25 Amazon gift cards"
+            ]
+        },
+        {
+            title: "Budgeting and Finance Workshop with Special Education Students",
+            description: "A tailored workshop focused on teaching budgeting and financial literacy to special education students.",
+            date: "March 2024",
+            highlights: [
+                "Interactive budgeting exercises",
+                "Personal finance management techniques",
+                "Engaging activities for 20 participants"
+            ]
+        },
+        {
+            title: "Education About American Enterprise Basics",
+            description: "An informative session educating students on the fundamentals of the American enterprise system.",
+            date: "April 2024",
+            highlights: [
+                "In-depth presentations on enterprise concepts",
+                "Engaging discussions with 39 students",
+                "Practical examples of American businesses"
+            ]
+        },
+        {
+            title: "Applying Business to Your Life",
+            description: "A workshop teaching students how to incorporate business strategies into their personal lives.",
+            date: "June 2024",
+            highlights: [
+                "Real-life applications of business concepts",
+                "Interactive sessions with 20 students",
+                "Personal development through business thinking"
+            ]
+        },
+        {
             title: "Entrepreneurship 101 for Middle Schoolers",
             description: "A workshop designed to introduce middle school students to the basics of entrepreneurship and business thinking.",
             date: "August 30th, 2024",
@@ -20,16 +59,8 @@ const CompetitionsSection: React.FC = () => {
             date: "September 1st, 2024",
             highlights: [
                 "Opportunity to pitch business ideas",
-                "Feedback from experienced entrepreneurs"
-            ]
-        },
-        {
-            title: "Art Competition",
-            description: "Our team brought awareness to the American Enterprise System by organizing an art competition for local Elementary and Middle schools. The competition encouraged creativity and business skills among students, who were tasked with designing a lemonade stand business.",
-            date: "Fall 2023",
-            highlights: [
-                "40+ submissions received",
-                "Winners awarded $25 Amazon gift cards"
+                "Feedback from experienced entrepreneurs",
+                "25+ attendees"
             ]
         }
     ];
@@ -45,7 +76,8 @@ const CompetitionsSection: React.FC = () => {
                 >
                     <h2 className="text-3xl sm:text-5xl font-bold text-blue-400 mb-4 sm:mb-8">Past Competitions and Workshops</h2>
                     <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
-                    Explore our past competitions and workshops that showcased skills and creativity. Each event was designed to challenge and inspire participants, fostering innovation and entrepreneurial spirit.                    </p>
+                        Explore our past competitions and workshops that showcased skills and creativity. Each event was designed to challenge and inspire participants, fostering innovation and entrepreneurial spirit.
+                    </p>
                 </motion.div>
                 <motion.div
                     className="max-w-4xl mx-auto space-y-8"
@@ -54,11 +86,16 @@ const CompetitionsSection: React.FC = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     {events.map((event, index) => (
-                        <div key={index} className="bg-gray-800 p-6 sm:p-10 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20">
+                        <div
+                            key={index}
+                            className="bg-gray-800 p-6 sm:p-10 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20"
+                        >
                             <div className="flex flex-col sm:flex-row items-center sm:items-start mb-4 sm:mb-6">
                                 <FaTrophy className="text-3xl sm:text-4xl text-yellow-400 mb-2 sm:mb-0 sm:mr-4" />
                                 <div>
-                                    <h3 className="text-2xl sm:text-3xl font-bold text-blue-400 text-center sm:text-left mb-2">{event.title}</h3>
+                                    <h3 className="text-2xl sm:text-3xl font-bold text-blue-400 text-center sm:text-left mb-2">
+                                        {event.title}
+                                    </h3>
                                     <span className="text-gray-400 flex items-center justify-center sm:justify-start text-sm sm:text-base">
                                         <FaCalendarAlt className="mr-2" />
                                         {event.date}
@@ -79,9 +116,7 @@ const CompetitionsSection: React.FC = () => {
                         </div>
                     ))}
                 </motion.div>
-                <div className="text-center mt-10">
-
-                </div>
+                <div className="text-center mt-10"></div>
             </div>
         </section>
     );
