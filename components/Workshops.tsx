@@ -65,21 +65,21 @@ const CompetitionsSection: React.FC = () => {
     ];
 
     return (
-        <section id="competitions" className="py-12 sm:py-20 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900">
+        <section id="competitions" className="py-16 sm:py-24 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900">
             <div className="container mx-auto px-4 sm:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-center mb-10 sm:mb-16"
+                    className="text-center mb-12 sm:mb-20"
                 >
-                    <h2 className="text-3xl sm:text-5xl font-bold text-blue-400 mb-4 sm:mb-8">Past Competitions and Workshops</h2>
-                    <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
+                    <h2 className="text-4xl sm:text-6xl font-bold text-blue-400 mb-6 sm:mb-10">Past Competitions and Workshops</h2>
+                    <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto">
                         Explore our past competitions and workshops that showcased skills and creativity. Each event was designed to challenge and inspire participants, fostering innovation and entrepreneurial spirit.
                     </p>
                 </motion.div>
                 <motion.div
-                    className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+                    className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -87,28 +87,28 @@ const CompetitionsSection: React.FC = () => {
                     {events.map((event, index) => (
                         <div
                             key={index}
-                            className="bg-gray-800 p-6 sm:p-8 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20"
+                            className="bg-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20"
                         >
-                            <div className="flex items-center mb-4">
-                                <FaTrophy className="text-3xl text-yellow-400 mr-3" />
+                            <div className="flex items-center mb-6">
+                                <FaTrophy className="text-4xl text-yellow-400 mr-4" />
                                 <div>
-                                    <h3 className="text-xl font-bold text-blue-400 mb-1">
+                                    <h3 className="text-2xl font-bold text-blue-400 mb-2">
                                         {event.title}
                                     </h3>
-                                    <span className="text-gray-400 flex items-center text-sm">
-                                        <FaCalendarAlt className="mr-1" />
+                                    <span className="text-gray-400 flex items-center text-base">
+                                        <FaCalendarAlt className="mr-2" />
                                         {event.date}
                                     </span>
                                 </div>
                             </div>
-                            <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+                            <p className="text-gray-300 mb-6 text-base leading-relaxed">
                                 {event.description}
                             </p>
-                            <ul className="list-none space-y-2">
+                            <ul className="list-none space-y-3">
                                 {event.highlights.map((highlight, hIndex) => (
                                     <li key={hIndex} className="flex items-start">
-                                        <FaLightbulb className="text-yellow-400 mt-1 mr-2 flex-shrink-0" />
-                                        <span className="text-gray-300 text-sm">{highlight}</span>
+                                        <FaLightbulb className="text-yellow-400 mt-1 mr-3 flex-shrink-0" />
+                                        <span className="text-gray-300 text-base">{highlight}</span>
                                     </li>
                                 ))}
                             </ul>
