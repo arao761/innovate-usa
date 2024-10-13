@@ -90,13 +90,13 @@ const CompetitionsSection: React.FC = () => {
                             className="bg-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20"
                         >
                             <div className="flex items-center mb-6">
-                                <FaTrophy className="text-4xl text-yellow-400 mr-4" />
+                                <FaTrophy size={40} className="text-yellow-400 mr-4 flex-shrink-0" />
                                 <div>
                                     <h3 className="text-2xl font-bold text-blue-400 mb-2">
                                         {event.title}
                                     </h3>
                                     <span className="text-gray-400 flex items-center text-base">
-                                        <FaCalendarAlt className="mr-2" />
+                                        <FaCalendarAlt size={16} className="mr-2 flex-shrink-0" />
                                         {event.date}
                                     </span>
                                 </div>
@@ -107,7 +107,7 @@ const CompetitionsSection: React.FC = () => {
                             <ul className="list-none space-y-3">
                                 {event.highlights.map((highlight, hIndex) => (
                                     <li key={hIndex} className="flex items-start">
-                                        <FaLightbulb className="text-yellow-400 mt-1 mr-3 flex-shrink-0" />
+                                        <FaLightbulb size={20} className="text-yellow-400 mt-1 mr-3 flex-shrink-0" />
                                         <span className="text-gray-300 text-base">{highlight}</span>
                                     </li>
                                 ))}
