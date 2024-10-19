@@ -7,7 +7,7 @@ const teamMembers = [
     { name: 'Roshini Mantena', role: 'Co-Founder and Program Manager', imgSrc: '/image4.jpg', description: 'Manages day-to-day operations, coordinates team efforts.' },
     { name: 'Rashmi Mantena', role: 'Co-Founder and Partnership Director', imgSrc: '/image8.JPG', description: 'Focuses on building strategic partnerships.' },
     { name: 'Ruhi Sharma', role: 'Treasurer', imgSrc: '/image3.jpg', description: 'Manages the organization finances and budgeting.' },
-    { name: 'Ankit Rao', role: 'Webmaster', imgSrc: 'https://media.licdn.com/dms/image/D4E03AQEtwmPBQtNGWA/profile-displayphoto-shrink_400_400/0/1711079713525?e=1729123200&v=beta&t=5B2hPSCos-jhaAeqckqteO6pYUznoP0i-wrhi7QdRrw', description: 'Oversees the design, development, and maintenance of the website.' },
+    { name: 'Ankit Rao', role: 'Webmaster', imgSrc: '/image9.jpeg', description: 'Oversees the design, development, and maintenance of the website.' },
     { name: 'Cara King', role: 'Outreach Coordinator', imgSrc: '/image6.jpg', description: 'Leads public relations efforts and manages media outreach.' },
     { name: 'Deryck Toney', role: 'Secretary', imgSrc: '/image7.jpg', description: 'Handles administrative tasks and keeps track of meetings.' },
     { name: 'Katie Helge', role: 'Media Specialist', imgSrc: '/image2.jpg', description: 'Oversees media production and strategy.' },

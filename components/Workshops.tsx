@@ -109,7 +109,7 @@ const CompetitionsSection: React.FC = () => {
                                     <li key={hIndex} className="flex items-start">
                                         <FaLightbulb size={20} className="text-yellow-400 mt-1 mr-3 flex-shrink-0" />
                                         <span className="text-gray-300 text-base">{highlight}</span>
-                                    </li>
+                                    </li>   
                                 ))}
                             </ul>
                         </div>
