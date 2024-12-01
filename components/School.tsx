@@ -6,7 +6,7 @@ const SchoolCollaborationSection: React.FC = () => {
 
     const collaborationDetails = {
         title: "School Collaboration",
-        description: "We actively engage with local schools, bringing entrepreneurial knowledge directly to students@ Our team creates tailored, age-appropriate workshops that inspire young minds and introduce them to the world of business and innovation.",
+        description: "We actively engage with local schools, bringing entrepreneurial knowledge directly to students. Our team creates tailored, age-appropriate workshops that inspire young minds and introduce them to the world of business and innovation.",
         galleryImages: [
             "/api/placeholder/500/400",
             "/api/placeholder/500/400"
