@@ -15,7 +15,7 @@ const RuhiPage: React.FC = () => {
                             <div className="relative">
                                 <div className="absolute inset-0 bg-blue-500 rounded-full opacity-10 blur-xl"></div>
                                 <img 
-                                    src="https://media.licdn.com/dms/image/v2/D4D03AQFGpuBXLPUpDA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723264568304?e=1729123200&v=beta&t=FMXTh2dRof4NZSkln9yB0VewhIAQUq8T_eZoXrDBXeg" 
+                                    src="/image3.jpg" 
                                     alt="Ruhi Sharma" 
                                     className="relative w-64 h-64 object-cover rounded-full shadow-xl border-4 border-white"
                                 />
