@@ -22,7 +22,7 @@ const SchoolCollaborationSection: React.FC = () => {
     };
 
     return (
-        <section className="py-16 sm:py-24 bg-gradient-to-r from-gray-900 to blue-900">
+        <section className="py-16 sm:py-24 bg-gradient-to-b from-gray-900 to-blue-900">
             <div className="container mx-auto px-4 sm:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
