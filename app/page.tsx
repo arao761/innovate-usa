@@ -10,6 +10,7 @@ import Workshops from '@/components/Workshops';
 import LearnEducationSection from '@/components/LearnEducationSection';
 import Footer from '@/components/Footer';
 import UpcomingCompetitions from '@/components/UpcomingCompetitions';
+import School from '@/components/School';
 import { Analytics } from "@vercel/analytics/react"
 
 const InnovateUSA: React.FC = () => {
@@ -26,6 +27,7 @@ const InnovateUSA: React.FC = () => {
             <AboutSection />
             <TeamSection />
             <ImpactSection />
+            <School />
             <Workshops />
             <UpcomingCompetitions />
             <LearnEducationSection />
