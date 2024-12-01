@@ -10,13 +10,15 @@ const CompetitionsSection: React.FC = () => {
             date: "Fall 2023",
             highlights: [
                 "40+ submissions received",
+                "Elementary school winner: Arnav Kashyap from Cedar Lane",
+                "Middle school winner: Saketaram from Trailside",
                 "Winners awarded $25 Amazon gift cards"
             ]
         },
         {
             title: "Budgeting and Finance Workshop with Special Education Students",
             description: "A tailored workshop focused on teaching budgeting and financial literacy to special education students.",
-            date: "March 2024",
+            date: "March 15th, 2024",
             highlights: [
                 "Interactive budgeting exercises",
                 "Personal finance management techniques",
@@ -26,7 +28,7 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "Education About American Enterprise Basics",
             description: "An informative session educating students on the fundamentals of the American enterprise system.",
-            date: "April 2024",
+            date: "April 6th, 2024",
             highlights: [
                 "In-depth presentations on enterprise concepts",
                 "Engaging discussions with 39 students",
@@ -36,10 +38,10 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "Applying Business to Your Life",
             description: "A workshop teaching students how to incorporate business strategies into their personal lives.",
-            date: "June 2024",
+            date: "June 12th, 2024",
             highlights: [
                 "Real-life applications of business concepts",
-                "Interactive sessions with 20 students",
+                "Interactive sessions with 15 students",
                 "Personal development through business thinking"
             ]
         },
@@ -49,7 +51,8 @@ const CompetitionsSection: React.FC = () => {
             date: "August 30th, 2024",
             highlights: [
                 "Interactive presentations on business fundamentals",
-                "Hands-on entrepreneurship activities"
+                "Hands-on entrepreneurship activities",
+                "12 participants engaged"
             ]
         },
         {
@@ -60,6 +63,36 @@ const CompetitionsSection: React.FC = () => {
                 "Opportunity to pitch business ideas",
                 "Feedback from experienced entrepreneurs",
                 "25+ attendees"
+            ]
+        },
+        {
+            title: "Starting from a Young Age",
+            description: "A workshop focused on teaching elementary schoolers how to create meaningful businesses from a young age.",
+            date: "September 27th, 2024",
+            highlights: [
+                "Inspiring young entrepreneurial minds",
+                "18 elementary schoolers participated",
+                "Foundational business concepts explored"
+            ]
+        },
+        {
+            title: "How to Create a Business 101",
+            description: "A comprehensive workshop on business creation with insights from Business Ridge Designs.",
+            date: "October 4th, 2024",
+            highlights: [
+                "30+ attendees",
+                "Special guest speakers from Business Ridge Designs",
+                "In-depth business creation strategies"
+            ]
+        },
+        {
+            title: "American Enterprise Day Workshop",
+            description: "A collaborative workshop with SB FBLA celebrating American Enterprise Day and educating future business leaders.",
+            date: "November 13th, 2024",
+            highlights: [
+                "Collaboration with SB FBLA",
+                "60+ participants",
+                "Comprehensive insights into American enterprise"
             ]
         }
     ];
