@@ -124,14 +124,14 @@ const CompetitionsSection: React.FC = () => {
                 <div className="flex justify-between items-center mb-8">
                 <button 
                     onClick={handlePrev} 
-                    className="text-yellow-400 hover:text-yellow-500 transition"
+                    className="absolute left-0 top-1/2 transform -translate-y-1/2 text-yellow-400 hover:text-yellow-500 transition"
                     aria-label="Previous"
                 >
                     <FaChevronLeft size={30} />
                 </button>
                 <button 
                     onClick={handleNext} 
-                    className="text-yellow-400 hover:text-yellow-500 transition"
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 text-yellow-400 hover:text-yellow-500 transition"
                     aria-label="Next"
                 >
                     <FaChevronRight size={30} />
