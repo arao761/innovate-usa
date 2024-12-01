@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaTrophy, FaCalendarAlt, FaLightbulb } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FaTrophy, FaCalendarAlt, FaLightbulb, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const CompetitionsSection: React.FC = () => {
     const events = [
@@ -97,6 +97,16 @@ const CompetitionsSection: React.FC = () => {
         }
     ];
 
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? events.length - 3 : prevIndex - 3));
+    };
+
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 3 >= events.length ? 0 : prevIndex + 3));
+    };
+
     return (
         <section id="competitions" className="py-16 sm:py-24 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900">
             <div className="container mx-auto px-4 sm:px-6">
@@ -111,13 +121,29 @@ const CompetitionsSection: React.FC = () => {
                         Explore our past competitions and workshops that showcased skills and creativity. Each event was designed to challenge and inspire participants, fostering innovation and entrepreneurial spirit.
                     </p>
                 </motion.div>
+                <div className="flex justify-between items-center mb-8">
+                <button 
+                    onClick={handlePrev} 
+                    className="text-yellow-400 hover:text-yellow-500 transition"
+                    aria-label="Previous"
+                >
+                    <FaChevronLeft size={30} />
+                </button>
+                <button 
+                    onClick={handleNext} 
+                    className="text-yellow-400 hover:text-yellow-500 transition"
+                    aria-label="Next"
+                >
+                    <FaChevronRight size={30} />
+                </button>
+            </div>
                 <motion.div
                     className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                    {events.map((event, index) => (
+                    {events.slice(currentIndex, currentIndex + 3).map((event, index) => (
                         <div
                             key={index}
                             className="bg-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20"
