@@ -108,7 +108,7 @@ const CompetitionsSection: React.FC = () => {
     };
 
     return (
-        <section id="competitions" className="py-16 sm:py-24 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900">
+        <section id="competitions" className="py-16 sm:py-24 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 relative">
             <div className="container mx-auto px-4 sm:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -121,59 +121,62 @@ const CompetitionsSection: React.FC = () => {
                         Explore our past competitions and workshops that showcased skills and creativity. Each event was designed to challenge and inspire participants, fostering innovation and entrepreneurial spirit.
                     </p>
                 </motion.div>
-                <div className="flex justify-between items-center mb-8">
-                <button 
-                    onClick={handlePrev} 
-                    className="absolute left-4 top-10 transform -translate-y-1/2 text-yellow-400 hover:text-yellow-500 transition"
-                    aria-label="Previous"
-                >
-                    <FaChevronLeft size={30} />
-                </button>
-                <button 
-                    onClick={handleNext} 
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 text-yellow-400 hover:text-yellow-500 transition"
-                    aria-label="Next"
-                >
-                    <FaChevronRight size={30} />
-                </button>
-            </div>
-                <motion.div
-                    className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                >
-                    {events.slice(currentIndex, currentIndex + 3).map((event, index) => (
-                        <div
-                            key={index}
-                            className="bg-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20"
+                
+                <div className="relative">
+                    <div className="absolute -top-12 w-full flex justify-between items-center z-10">
+                        <button 
+                            onClick={handlePrev} 
+                            className="text-yellow-400 hover:text-yellow-500 transition"
+                            aria-label="Previous"
                         >
-                            <div className="flex items-center mb-6">
-                                <FaTrophy size={40} className="text-yellow-400 mr-4 flex-shrink-0" />
-                                <div>
-                                    <h3 className="text-2xl font-bold text-blue-400 mb-2">
-                                        {event.title}
-                                    </h3>
-                                    <span className="text-gray-400 flex items-center text-base">
-                                        <FaCalendarAlt size={16} className="mr-2 flex-shrink-0" />
-                                        {event.date}
-                                    </span>
+                            <FaChevronLeft size={30} />
+                        </button>
+                        <button 
+                            onClick={handleNext} 
+                            className="text-yellow-400 hover:text-yellow-500 transition"
+                            aria-label="Next"
+                        >
+                            <FaChevronRight size={30} />
+                        </button>
+                    </div>
+                    <motion.div
+                        className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                    >
+                        {events.slice(currentIndex, currentIndex + 3).map((event, index) => (
+                            <div
+                                key={index}
+                                className="bg-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 border border-yellow-400/20"
+                            >
+                                <div className="flex items-center mb-6">
+                                    <FaTrophy size={40} className="text-yellow-400 mr-4 flex-shrink-0" />
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-blue-400 mb-2">
+                                            {event.title}
+                                        </h3>
+                                        <span className="text-gray-400 flex items-center text-base">
+                                            <FaCalendarAlt size={16} className="mr-2 flex-shrink-0" />
+                                            {event.date}
+                                        </span>
+                                    </div>
                                 </div>
+                                <p className="text-gray-300 mb-6 text-base leading-relaxed">
+                                    {event.description}
+                                </p>
+                                <ul className="list-none space-y-3">
+                                    {event.highlights.map((highlight, hIndex) => (
+                                        <li key={hIndex} className="flex items-start">
+                                            <FaLightbulb size={20} className="text-yellow-400 mt-1 mr-3 flex-shrink-0" />
+                                            <span className="text-gray-300 text-base">{highlight}</span>
+                                        </li>   
+                                    ))}
+                                </ul>
                             </div>
-                            <p className="text-gray-300 mb-6 text-base leading-relaxed">
-                                {event.description}
-                            </p>
-                            <ul className="list-none space-y-3">
-                                {event.highlights.map((highlight, hIndex) => (
-                                    <li key={hIndex} className="flex items-start">
-                                        <FaLightbulb size={20} className="text-yellow-400 mt-1 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-300 text-base">{highlight}</span>
-                                    </li>   
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-                </motion.div>
+                        ))}
+                    </motion.div>
+                </div>
             </div>
         </section>
     );
