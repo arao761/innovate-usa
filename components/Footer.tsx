@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                         <a href="https://www.tiktok.com/@innovateusa?_t=8onHfJRk6lK&_r=1" className="text-white text-3xl mx-2 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
                             <FaTiktok />
                         </a>
-                        <a href="https://www.instagram.com/innovateusa24?igsh=dTFpczV6bXFndTR4" className="text-white text-3xl mx-2 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/innovate.usa/" className="text-white text-3xl mx-2 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
                             <FaInstagram />
                         </a>
                         <a href="https://open.spotify.com/show/0VCChyeG3WrmjVqvlYasPG" className="text-white text-3xl mx-2 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
