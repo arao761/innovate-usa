@@ -97,6 +97,72 @@ const ImpactSection: React.FC = () => {
                         </motion.div>
                     ))}
                 </div>
+
+                {/* Bulldog Tribune Article Feature */}
+                <div className="mt-12 md:mt-16">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+                    >
+                        <div className="flex flex-col md:flex-row items-center">
+                            <img
+                                src="/path-to-bulldog-tribune-image.jpg"
+                                alt="Bulldog Tribune"
+                                className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-6"
+                            />
+                            <div className="text-center md:text-left">
+                                <h3 className="text-2xl md:text-3xl font-bold text-blue-400 mb-3">Featured in the Bulldog Tribune</h3>
+                                <p className="text-gray-300 mb-4">
+                                    Read about our latest achievements and initiatives in the Bulldog Tribune. Discover how we’re making a difference!
+                                </p>
+                                <a
+                                    href="https://bulldogtribune.com/article-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 font-semibold hover:underline"
+                                >
+                                    Read the Article
+                                </a>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+
+                {/* Spotify Podcast Feature */}
+                <div className="mt-12 md:mt-16">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="bg-blue-500 p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+                    >
+                        <div className="flex flex-col md:flex-row items-center">
+                            <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                                <img
+                                    src="/path-to-spotify-logo.png"
+                                    alt="Spotify Podcast"
+                                    className="w-16 h-16 md:w-20 md:h-20"
+                                />
+                            </div>
+                            <div className="text-center md:text-left">
+                                <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">Listen to Our Podcast</h3>
+                                <p className="text-gray-200 mb-4">
+                                    Tune in to our Spotify podcast to hear inspiring stories and insights about our journey and impact.
+                                </p>
+                                <a
+                                    href="https://spotify.com/podcast-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-white font-semibold hover:underline"
+                                >
+                                    Listen on Spotify
+                                </a>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
             </div>
         </section>
     );
