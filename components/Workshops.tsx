@@ -7,7 +7,7 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "Art Competition",
             description: "Our team brought awareness to the American Enterprise System by organizing an art competition for local Elementary and Middle schools. The competition encouraged creativity and business skills among students, who were tasked with designing a lemonade stand business.",
-            date: "Fall 2023",
+            date: "August 6th",
             highlights: [
                 "40+ submissions received",
                 "Elementary school winner: Arnav Kashyap from Cedar Lane",
@@ -18,7 +18,7 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "Budgeting and Finance Workshop with Special Education Students",
             description: "A tailored workshop focused on teaching budgeting and financial literacy to special education students.",
-            date: "March 15th, 2024",
+            date: "August 18th",
             highlights: [
                 "Interactive budgeting exercises",
                 "Personal finance management techniques",
@@ -28,7 +28,7 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "Education About American Enterprise Basics",
             description: "An informative session educating students on the fundamentals of the American enterprise system.",
-            date: "April 6th, 2024",
+            date: "August 26th",
             highlights: [
                 "In-depth presentations on enterprise concepts",
                 "Engaging discussions with 39 students",
@@ -38,7 +38,7 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "Applying Business to Your Life",
             description: "A workshop teaching students how to incorporate business strategies into their personal lives.",
-            date: "June 12th, 2024",
+            date: "September 7th",
             highlights: [
                 "Real-life applications of business concepts",
                 "Interactive sessions with 15 students",
@@ -48,7 +48,7 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "Entrepreneurship 101 for Middle Schoolers",
             description: "A workshop designed to introduce middle school students to the basics of entrepreneurship and business thinking.",
-            date: "August 30th, 2024",
+            date: "September 24th",
             highlights: [
                 "Interactive presentations on business fundamentals",
                 "Hands-on entrepreneurship activities",
@@ -58,7 +58,7 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "Shark Tank-style Pitch Competition",
             description: "An exciting pitch competition for middle and high school students to present their innovative ideas to a panel of judges.",
-            date: "September 1st, 2024",
+            date: "October 11th",
             highlights: [
                 "Opportunity to pitch business ideas",
                 "Feedback from experienced entrepreneurs",
@@ -68,7 +68,7 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "Starting from a Young Age",
             description: "A workshop focused on teaching elementary schoolers how to create meaningful businesses from a young age.",
-            date: "September 27th, 2024",
+            date: "October 26th",
             highlights: [
                 "Inspiring young entrepreneurial minds",
                 "18 elementary schoolers participated",
@@ -78,7 +78,7 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "How to Create a Business 101",
             description: "A comprehensive workshop on business creation with insights from Business Ridge Designs.",
-            date: "October 4th, 2024",
+            date: "November 4th",
             highlights: [
                 "30+ attendees",
                 "Special guest speakers from Business Ridge Designs",
@@ -88,13 +88,13 @@ const CompetitionsSection: React.FC = () => {
         {
             title: "American Enterprise Day Workshop",
             description: "A collaborative workshop with SB FBLA celebrating American Enterprise Day and educating future business leaders.",
-            date: "November 13th, 2024",
+            date: "November 15th",
             highlights: [
                 "Collaboration with SB FBLA",
                 "60+ participants",
                 "Comprehensive insights into American enterprise"
             ]
-        }
+        },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
