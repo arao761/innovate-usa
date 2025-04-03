@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaChalkboardTeacher, FaUsers, FaPiggyBank, FaHandshake, FaChartLine, FaBullseye } from 'react-icons/fa';
+import { FaChalkboardTeacher, FaUsers, FaPiggyBank, FaHandshake, FaChartLine, FaBullseye, FaSpotify, FaNewspaper } from 'react-icons/fa';
 
 const impactItems = [
     { 
@@ -57,6 +57,18 @@ const impactItems = [
             </>
         ) 
     },
+    {
+        icon: FaNewspaper,
+        title: 'The Bulldog Tribune',
+        description: 'Explore our featured articles and stories in the Bulldog Tribune, showcasing the achievements and milestones of InnovateUSA.',
+        link: 'https://bulldogtribune.example.com',
+    },
+    {
+        icon: FaSpotify,
+        title: 'Spotify Podcast',
+        description: 'Listen to our Spotify podcast to stay updated on our latest initiatives, interviews, and inspiring stories.',
+        link: 'https://open.spotify.com/show/0VCChyeG3WrmjVqvlYasPG',
+    },
 ];
 
 const ImpactSection: React.FC = () => {
@@ -93,6 +105,16 @@ const ImpactSection: React.FC = () => {
                                 <p className="text-sm md:text-base text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
                                     {impact.description}
                                 </p>
+                                {impact.link && (
+                                    <a
+                                        href={impact.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 mt-4"
+                                    >
+                                        Learn More
+                                    </a>
+                                )}
                             </div>
                         </motion.div>
                     ))}
