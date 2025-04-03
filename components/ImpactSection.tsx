@@ -63,19 +63,7 @@ const impactItems: ImpactItem[] = [
                 InnovateUSA aimed to leave a lasting imprint on its community and students, promoting the values of the <strong>American Enterprise System</strong> through social media and workshops.
             </>
         ) 
-    },
-    {
-        icon: FaNewspaper,
-        title: 'The Bulldog Tribune',
-        description: 'Explore our featured article in the Bulldog Tribune!',
-        link: 'https://www.bulldogtribune.com/feature/2025/03/21/innovateusa-business-education-for-a-brighter-tomorrow/',
-    },
-    {
-        icon: FaSpotify,
-        title: 'Spotify Podcast',
-        description: 'Listen to our Spotify podcast to view amazing stories from entrepreneurs.',
-        link: 'https://open.spotify.com/show/0VCChyeG3WrmjVqvlYasPG',
-    },
+    }
 ];
 
 const ImpactSection: React.FC = () => {
@@ -93,6 +81,8 @@ const ImpactSection: React.FC = () => {
                         Discover the profound impact of our initiatives on education, community engagement, and beyond.
                     </p>
                 </motion.div>
+
+                {/* Impact Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {impactItems.map((impact, index) => (
                         <motion.div
@@ -112,20 +102,47 @@ const ImpactSection: React.FC = () => {
                                 <p className="text-sm md:text-base text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
                                     {impact.description}
                                 </p>
-                                {impact.link && (
-                                    <a
-                                        href={impact.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label={`Learn more about ${impact.title}`}
-                                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 mt-4"
-                                    >
-                                        Learn More
-                                    </a>
-                                )}
                             </div>
                         </motion.div>
                     ))}
+                </div>
+
+                {/* Highlight Section for Bulldog Tribune & Spotify Podcast */}
+                <div className="mt-12">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 bg-blue-700 p-8 md:p-12 rounded-2xl shadow-xl"
+                    >
+                        {/* Bulldog Tribune */}
+                        <a 
+                            href="https://www.bulldogtribune.com/feature/2025/03/21/innovateusa-business-education-for-a-brighter-tomorrow/"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-4 md:gap-6 bg-white p-4 md:p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 w-full md:w-1/2"
+                        >
+                            <FaNewspaper size={48} className="text-blue-600" />
+                            <div>
+                                <h3 className="text-xl md:text-2xl font-semibold text-gray-900">The Bulldog Tribune</h3>
+                                <p className="text-sm md:text-base text-gray-700">Explore our featured article in the Bulldog Tribune!</p>
+                            </div>
+                        </a>
+
+                        {/* Spotify Podcast */}
+                        <a 
+                            href="https://open.spotify.com/show/0VCChyeG3WrmjVqvlYasPG"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-4 md:gap-6 bg-green-600 p-4 md:p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 w-full md:w-1/2"
+                        >
+                            <FaSpotify size={48} className="text-white" />
+                            <div>
+                                <h3 className="text-xl md:text-2xl font-semibold text-white">Spotify Podcast</h3>
+                                <p className="text-sm md:text-base text-gray-200">Listen to our Spotify podcast to view amazing stories from entrepreneurs.</p>
+                            </div>
+                        </a>
+                    </motion.div>
                 </div>
             </div>
         </section>
