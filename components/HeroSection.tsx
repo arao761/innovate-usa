@@ -4,8 +4,14 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const images = [
     '/improvedinnovatelogo.jpg',
-    '/IMG_7961.jpeg',
-    '/DSC_0339.jpeg',
+    '/grouppic.jpeg',
+    '/alzheimer.jpeg',
+    '/presentation.jpeg',
+    '/presentation2.jpeg',
+    '/sharktank.jpeg',
+    '/lockedin.jpeg',
+    '/school.jpeg',
+    'meeting.jpeg'
 ];
 
 const HeroSection: React.FC = () => {
