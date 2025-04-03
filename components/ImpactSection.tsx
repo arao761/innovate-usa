@@ -134,7 +134,7 @@ const ImpactSection: React.FC = () => {
                             href="https://open.spotify.com/show/0VCChyeG3WrmjVqvlYasPG"
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="flex items-center gap-4 md:gap-6 bg-green-600 p-4 md:p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 w-full md:w-1/2"
+                            className="flex items-center gap-4 md:gap-6 bg-green-800 p-4 md:p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 w-full md:w-1/2"
                         >
                             <FaSpotify size={48} className="text-white" />
                             <div>
