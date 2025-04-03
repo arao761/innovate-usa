@@ -2,7 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaChalkboardTeacher, FaUsers, FaPiggyBank, FaHandshake, FaChartLine, FaBullseye, FaSpotify, FaNewspaper } from 'react-icons/fa';
 
-const impactItems = [
+type ImpactItem = {
+    icon: React.ElementType;
+    title: string;
+    description: React.ReactNode;
+    link?: string;
+};
+
+const impactItems: ImpactItem[] = [
     { 
         icon: FaChalkboardTeacher, 
         title: 'Education and Awareness', 
@@ -60,13 +67,13 @@ const impactItems = [
     {
         icon: FaNewspaper,
         title: 'The Bulldog Tribune',
-        description: 'Explore our featured articles and stories in the Bulldog Tribune, showcasing the achievements and milestones of InnovateUSA.',
-        link: 'https://bulldogtribune.example.com',
+        description: 'Explore our featured article in the Bulldog Tribune!',
+        link: 'https://www.bulldogtribune.com/feature/2025/03/21/innovateusa-business-education-for-a-brighter-tomorrow/',
     },
     {
         icon: FaSpotify,
         title: 'Spotify Podcast',
-        description: 'Listen to our Spotify podcast to stay updated on our latest initiatives, interviews, and inspiring stories.',
+        description: 'Listen to our Spotify podcast to view amazing stories from entrepreneurs.',
         link: 'https://open.spotify.com/show/0VCChyeG3WrmjVqvlYasPG',
     },
 ];
@@ -97,7 +104,7 @@ const ImpactSection: React.FC = () => {
                         >
                             <div className="flex flex-col items-center text-center">
                                 <div className="w-16 h-16 md:w-20 md:h-20 bg-blue-500 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <impact.icon size={32} className="text-white" />
+                                    {React.createElement(impact.icon, { size: 32, className: "text-white" })}
                                 </div>
                                 <h3 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4 text-white group-hover:text-blue-400 transition-colors duration-300">
                                     {impact.title}
@@ -110,6 +117,7 @@ const ImpactSection: React.FC = () => {
                                         href={impact.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label={`Learn more about ${impact.title}`}
                                         className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 mt-4"
                                     >
                                         Learn More
@@ -118,72 +126,6 @@ const ImpactSection: React.FC = () => {
                             </div>
                         </motion.div>
                     ))}
-                </div>
-
-                {/* Bulldog Tribune Article Feature */}
-                <div className="mt-12 md:mt-16">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
-                    >
-                        <div className="flex flex-col md:flex-row items-center">
-                            <img
-                                src="/path-to-bulldog-tribune-image.jpg"
-                                alt="Bulldog Tribune"
-                                className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-6"
-                            />
-                            <div className="text-center md:text-left">
-                                <h3 className="text-2xl md:text-3xl font-bold text-blue-400 mb-3">Featured in the Bulldog Tribune</h3>
-                                <p className="text-gray-300 mb-4">
-                                    Read about our latest achievements and initiatives in the Bulldog Tribune. Discover how we’re making a difference!
-                                </p>
-                                <a
-                                    href="https://www.bulldogtribune.com/feature/2025/03/21/innovateusa-business-education-for-a-brighter-tomorrow/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-400 font-semibold hover:underline"
-                                >
-                                    Read the Article
-                                </a>
-                            </div>
-                        </div>
-                    </motion.div>
-                </div>
-
-                {/* Spotify Podcast Feature */}
-                <div className="mt-12 md:mt-16">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="bg-blue-500 p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
-                    >
-                        <div className="flex flex-col md:flex-row items-center">
-                            <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
-                                <img
-                                    src="/path-to-spotify-logo.png"
-                                    alt="Spotify Podcast"
-                                    className="w-16 h-16 md:w-20 md:h-20"
-                                />
-                            </div>
-                            <div className="text-center md:text-left">
-                                <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">Listen to Our Podcast</h3>
-                                <p className="text-gray-200 mb-4">
-                                    Tune in to our Spotify podcast to hear inspiring stories from entrepreneurs!
-                                </p>
-                                <a
-                                    href="https://open.spotify.com/show/0VCChyeG3WrmjVqvlYasPG"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-white font-semibold hover:underline"
-                                >
-                                    Listen on Spotify
-                                </a>
-                            </div>
-                        </div>
-                    </motion.div>
                 </div>
             </div>
         </section>
