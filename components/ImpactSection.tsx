@@ -113,7 +113,7 @@ const ImpactSection: React.FC = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 bg-blue-700 p-8 md:p-12 rounded-2xl shadow-xl"
+                        className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 bg-blue-900 p-8 md:p-12 rounded-2xl shadow-xl"
                     >
                         {/* Bulldog Tribune */}
                         <a 
