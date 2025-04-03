@@ -51,7 +51,7 @@ const impactItems: ImpactItem[] = [
         title: 'Participation', 
         description: (
             <>
-                Our social media platforms gained <strong>120 followers</strong>, and our active participation in workshops remained high, impacting over <strong>15,000 students</strong>.
+                Our social media platforms gained <strong>1000 followers</strong>, and our active participation in workshops remained high, impacting over <strong>15,000 students</strong>.
             </>
         ) 
     },
