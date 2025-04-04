@@ -11,7 +11,9 @@ const images = [
     '/sharktank.jpeg',
     '/lockedin.jpeg',
     '/school.jpeg',
-    'meeting.jpeg'
+    '/meeting.jpeg',
+    '/putpic1.jpeg',
+    '/putpic2.jpeg'
 ];
 
 const HeroSection: React.FC = () => {
